@@ -1,0 +1,15 @@
+.button {
+    width: 298px;
+    height: 54px;
+    border: none;
+    background: $color-orange-grad;
+    text-transform: uppercase;
+    cursor: pointer;   
+}
+
+.button_watch {
+    @include font(16px, 22px, 500);
+    color: $color-white;
+    border-radius: 25px;
+    margin-right: 101px;
+}
