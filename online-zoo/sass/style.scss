@@ -2,3 +2,12 @@
 
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
+
+@import 'base/reset';
+
+@import 'components/buttons';
+@import 'components/wrappers';
+
+@import 'layout/header';
+@import 'layout/navigation';
+@import 'layout/footer';

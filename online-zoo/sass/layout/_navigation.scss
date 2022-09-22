@@ -1,0 +1,18 @@
+.nav {
+    display: flex;
+
+    &__item {
+        @include font(16px, 52px, 500);
+        padding-right: 58px;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $color-white;
+
+        &.active {
+            color: $color-orange-grad;
+        }
+    }
+}
+

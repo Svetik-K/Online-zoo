@@ -1,0 +1,30 @@
+.header {
+    width: 100%;
+    background-color: $color-black;
+    padding: 14px 0;
+}
+
+.logo {
+    width: 82px;
+    height: 52px;
+    border: 1px solid $color-white;
+    background-image: url(../assets/icons/bamboo.svg);
+    background-position: left 10px bottom 6px;
+    background-repeat: no-repeat;
+    margin-right: 63px;
+
+    &__text {
+        @include font(19px, 26px, 400);
+        text-align: center;
+        color: $color-white;
+    }
+}
+
+.designed {
+    margin-left: auto;
+    
+    p {
+        @include font(16px, 52px, 500);
+        color: $color-white;
+    }
+}
