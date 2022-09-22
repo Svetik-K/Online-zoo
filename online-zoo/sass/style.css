@@ -89,6 +89,11 @@ table {
   padding: 86px 0 100px;
 }
 
+.backstage__wrapper {
+  display: flex;
+  padding: 140px 0;
+}
+
 .header {
   width: 100%;
   background-color: #000000;
@@ -147,7 +152,10 @@ table {
 }
 
 .nav__link.active {
-  color: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .watch {
@@ -186,5 +194,55 @@ table {
 
 .text_yellow {
   color: #FFEE2E;
+}
+
+.backstage {
+  background-color: #FFFFFF;
+  background-image: url(../assets/images/flower_foto1.png);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.backstage__image {
+  width: 52.5%;
+}
+
+.backstage__image img {
+  width: 100%;
+  height: 100%;
+}
+
+.backstage__text {
+  width: 47.5%;
+  padding-left: 87px;
+  text-align: left;
+  color: #333B41;
+}
+
+.backstage__title {
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
+}
+
+.backstage p {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+}
+
+.backstage__subtitle {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  margin-top: 54px;
+  margin-bottom: 34px;
 }
 /*# sourceMappingURL=style.css.map */

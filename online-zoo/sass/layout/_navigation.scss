@@ -11,7 +11,10 @@
         color: $color-white;
 
         &.active {
-            color: $color-orange-grad;
+            background: $color-orange-grad;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
     }
 }
