@@ -1,0 +1,69 @@
+.feed {
+    background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+    opacity: 0.9;
+    padding-top: 69px;
+    padding-bottom: 100px;
+    color: $color-black-blue;
+
+    &__title {
+        @include font(48px, 58px, 400);
+        color: $color-orange;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    &__subtitle {
+        @include font(24px, 29px, 400);
+        margin-bottom: 40px;
+        padding-left: 99px;
+    }
+
+    &__covid {
+        @include font(16px, 21px, 500);
+        padding-left: 99px;
+        margin-bottom: 10px;  
+    }
+
+    &__text {
+        @include font(16px, 21px, 400);
+        padding-left: 99px; 
+        margin-bottom: 60px; 
+    }
+
+    &__scheme-title {
+        @include font(36px, 47px, 400);
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+}
+
+.scheme {
+    width: 764px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 60px;
+
+    &__box {
+        width: 168px;
+    }
+}
+
+.box {
+
+    &__image {
+        width: 100%;
+        height: 168px;
+        background-color: $color-white;
+        margin-bottom: 30px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $color-orange;
+    }
+
+    &__text {
+        @include font(16px, 22px, 400);
+    }
+}
