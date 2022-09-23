@@ -13,3 +13,38 @@
     border-radius: 25px;
     margin-right: 101px;
 }
+
+.button_left {
+    width: 62px;
+    height: 62px;
+    position: absolute;
+    top: 443px;
+    left: -82px;
+    border-radius: 50%;
+    background: url(../assets/icons/arr_left.svg), $color-orange-grad ;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.button_right {
+    width: 62px;
+    height: 62px;
+    position: absolute;
+    top: 443px;
+    right: -82px;
+    border-radius: 50%;
+    background: url(../assets/icons/arr_right.svg), $color-orange-grad ;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.button_choose {
+    border-radius: 25px;
+    color: $color-white;
+    display: block;
+    margin: 0 auto;
+}
