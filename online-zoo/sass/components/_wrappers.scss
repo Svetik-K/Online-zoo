@@ -11,17 +11,20 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding: 86px 0 100px;
+    padding: 85px 0 100px;
 }
 
 .backstage__wrapper {
     display: flex;
+    justify-content: space-between;
     padding: 140px 0;
 }
 
 .choose__wrapper {
     position: relative;
+    max-width: 1324px;
     padding: 40px 0 100px;
+    margin: 0 auto;
 }
 
 .feed__wrapper {
@@ -29,3 +32,4 @@
     border-radius: 20px;
     padding: 41px 0 59px;
 }
+

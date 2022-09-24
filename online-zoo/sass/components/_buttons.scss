@@ -4,6 +4,7 @@
     border: none;
     background: $color-orange-grad;
     text-transform: uppercase;
+    text-align: center;
     cursor: pointer;   
 }
 
@@ -11,7 +12,7 @@
     @include font(16px, 22px, 500);
     color: $color-white;
     border-radius: 25px;
-    margin-right: 101px;
+    margin-right: 99px;
 }
 
 .button_left {
@@ -19,7 +20,7 @@
     height: 62px;
     position: absolute;
     top: 443px;
-    left: -82px;
+    left: 0;
     border-radius: 50%;
     background: url(../assets/icons/arr_left.svg), $color-orange-grad ;
     background-position: center;
@@ -33,7 +34,7 @@
     height: 62px;
     position: absolute;
     top: 443px;
-    right: -82px;
+    right: 0;
     border-radius: 50%;
     background: url(../assets/icons/arr_right.svg), $color-orange-grad ;
     background-position: center;
@@ -43,6 +44,7 @@
 }
 
 .button_choose {
+    @include font(16px, 22px, 500);
     border-radius: 25px;
     color: $color-white;
     display: block;
@@ -50,8 +52,15 @@
 }
 
 .button_feed {
+    @include font(16px, 22px, 500);
     color: $color-white;
     border-radius: 25px;
     display: block;
     margin: 0 auto;
+}
+
+.button_feedback {
+    @include font(16px, 22px, 500);
+    color: $color-white;
+    border-radius: 5px;
 }

@@ -1,5 +1,5 @@
 .feed {
-    background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+    background: $color-orange-border;
     opacity: 0.9;
     padding-top: 69px;
     padding-bottom: 100px;
@@ -45,7 +45,20 @@
     margin: 0 auto 60px;
 
     &__box {
+        position: relative;
         width: 168px;
+
+        &::after {
+            content: url(../assets/icons/arrow_icon.svg);
+            display: block;
+            position: absolute;
+            top: 60px;
+            right: -100px;
+        }
+
+        &:last-child::after {
+            display: none;
+        }
     }
 }
 

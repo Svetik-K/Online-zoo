@@ -5,7 +5,8 @@
     background-repeat: no-repeat;
 
     &__image {
-        width: 52.5%;
+        max-width: 52.5%;
+        height: 403px;
 
         img {
             width: 100%;
@@ -14,8 +15,7 @@
     }
 
     &__text {
-        width: 47.5%;
-        padding-left: 87px;
+        width: 40.1%;
         text-align: left;
         color: $color-black-blue;
     }
@@ -25,13 +25,17 @@
         margin-bottom: 20px;
     }
 
-    p {
+    &__founded {
         @include font(16px, 21px, 400);
     }
     
     &__subtitle {
         @include font(24px, 29px, 400);
         margin-top: 54px;
-        margin-bottom: 34px;
+        margin-bottom: 33px;
+    }
+
+    &__goal {
+        @include font(16px, 22px, 400);
     }
 }
