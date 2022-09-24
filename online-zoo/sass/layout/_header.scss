@@ -23,8 +23,17 @@
 .designed {
     margin-left: auto;
     
-    p {
+    a {
         @include font(16px, 52px, 500);
         color: $color-white;
+        text-decoration: none;
+        transition: 0.5s;
+
+        &:hover {
+            background: $color-orange-grad;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
     }
 }

@@ -9,8 +9,16 @@
     &__link {
         text-decoration: none;
         color: $color-white;
+        transition: 0.5s;
 
         &.active {
+            background: $color-orange-grad;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        &:hover {
             background: $color-orange-grad;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;

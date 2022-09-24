@@ -2,10 +2,15 @@
     width: 298px;
     height: 54px;
     border: none;
-    background: $color-orange-grad;
+    background: $color-orange-grad, $color-orange;
     text-transform: uppercase;
     text-align: center;
-    cursor: pointer;   
+    cursor: pointer; 
+    transition: 0.5s;
+    
+    &:hover {
+        background: $color-button-hover;
+    }
 }
 
 .button_watch {
@@ -22,11 +27,18 @@
     top: 443px;
     left: 0;
     border-radius: 50%;
-    background: url(../assets/icons/arr_left.svg), $color-orange-grad ;
+    background: url(../assets/icons/arr_left.svg), $color-orange-grad, $color-orange;
     background-position: center;
     background-repeat: no-repeat;
     border: none;
     cursor: pointer;
+    transition: 0.5s;
+
+    &:hover {
+        background: url(../assets/icons/arr_left.svg), $color-button-hover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 }
 
 .button_right {
@@ -36,11 +48,19 @@
     top: 443px;
     right: 0;
     border-radius: 50%;
-    background: url(../assets/icons/arr_right.svg), $color-orange-grad ;
+    background: url(../assets/icons/arr_right.svg), $color-orange-grad, $color-orange;
     background-position: center;
     background-repeat: no-repeat;
     border: none;
     cursor: pointer;
+    transition: 0.5s;
+
+    &:hover {
+        background: url(../assets/icons/arr_right.svg), $color-button-hover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
 }
 
 .button_choose {
