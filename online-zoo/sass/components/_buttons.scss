@@ -1,0 +1,105 @@
+.button {
+    width: 298px;
+    height: 54px;
+    border: none;
+    background: $color-orange-grad, $color-orange;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer; 
+    transition: 0.5s;
+    
+    &:hover {
+        background: $color-button-hover;
+    }
+
+    &_watch {
+        @include font(16px, 22px, 500);
+        color: $color-white;
+        border-radius: 25px;
+        margin-right: 99px;
+    }
+
+    &_choose {
+        @include font(16px, 22px, 500);
+        border-radius: 25px;
+        color: $color-white;
+        display: block;
+        margin: 0 auto;
+    }
+
+    &_feed {
+        @include font(16px, 22px, 500);
+        color: $color-white;
+        border-radius: 25px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    &_feedback {
+        @include font(16px, 22px, 500);
+        color: $color-white;
+        border-radius: 5px;
+    }
+
+    &_donate {
+        @include font(16px, 22px, 500);
+        color: $color-white;
+        border-radius: 5px;
+    }
+}
+
+
+.button_left {
+    width: 62px;
+    height: 62px;
+    position: absolute;
+    top: 443px;
+    left: 0;
+    border-radius: 50%;
+    background: url(../assets/icons/arr_left.svg), $color-orange-grad, $color-orange;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+
+    &:hover {
+        background: url(../assets/icons/arr_left.svg), $color-button-hover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+.button_right {
+    width: 62px;
+    height: 62px;
+    position: absolute;
+    top: 443px;
+    right: 0;
+    border-radius: 50%;
+    background: url(../assets/icons/arr_right.svg), $color-orange-grad, $color-orange;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+
+    &:hover {
+        background: url(../assets/icons/arr_right.svg), $color-button-hover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+}
+
+.button_submit {
+    width: 129px;
+    height: 42px;
+    @include font(16px, 22px, 400);
+    color: $color-green;
+    background-color: $color-light-grey;
+    border-radius: 5px;
+    border: 1px solid $color-green;
+    cursor: pointer;
+    margin-left: 6px;
+}

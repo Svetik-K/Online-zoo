@@ -1,0 +1,108 @@
+.testimonials {
+    padding: 140px 0 180px;
+    background: url(../assets/images/leav_foto.png), $color-white;
+    background-position: right bottom -130px;
+    background-repeat: no-repeat;
+
+    &__title {
+        @include font(36px, 47px, 400);
+        color: $color-black-blue;
+        text-align: center;
+        margin-bottom: 47px;
+    }
+
+    &__reviews {
+        width: 100%;
+        height: 391px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 21px;
+    }
+
+    &__progress {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 51.6%;
+        height: 8px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        border-radius: 5px;
+        background: $color-pink-grad;
+       
+    }
+}
+
+.progress {
+
+    &__content {
+        width: calc(100% - 2px);
+        height: 6px;
+        background-color: #F5F7F6;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    &__bar {
+        background-color: $color-border-link;
+        border-radius: 5px;
+        height: 100%;
+        width: 19%;
+        transition: width 0.1s linear;
+    }
+}
+
+.review {
+    width: 268px;
+    height: 391px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: $color-pink-grad;
+
+    &__content {
+        width: 266px;
+        height: 389px;
+        background: $color-light-grey;
+        border-radius: 20px;
+        padding: 14px 13px 18px 16px;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    &__user-info {
+        display: flex;
+        margin-bottom: 7px;
+
+        img {
+            padding-right: 11px;
+        }
+    }
+
+    &__user-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__text {
+        @include font(15px, 18px, 300);
+        color: $color-grey;  
+        
+    }
+}
+
+.user-text {
+
+    &__name {
+        @include font(16px, 19px, 400);
+        color: $color-black;
+    }
+
+    &__location {
+        position: relative;
+        @include font(15px, 18px, 300);
+        color: #BDBDBD;
+    }
+
+}

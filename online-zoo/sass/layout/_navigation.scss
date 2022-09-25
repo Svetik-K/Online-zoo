@@ -1,0 +1,29 @@
+.nav {
+    display: flex;
+
+    &__item {
+        @include font(16px, 52px, 500);
+        padding-right: 58px;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $color-white;
+        transition: 0.5s;
+
+        &.active {
+            background: $color-orange-grad;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        &:hover {
+            background: $color-orange-grad;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    }
+}
+

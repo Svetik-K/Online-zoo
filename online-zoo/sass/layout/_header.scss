@@ -1,0 +1,40 @@
+.header {
+    width: 100%;
+    background-color: $color-black;
+    padding: 14px 0;
+}
+
+.logo {
+    width: 82px;
+    height: 51px;
+    border: 1px solid $color-white;
+    background-image: url(../assets/icons/bamboo.svg);
+    background-position: left 10px bottom 6px;
+    background-repeat: no-repeat;
+    margin-right: 63px;
+
+    &__text {
+        @include font(19px, 23px, 400);
+        text-align: center;
+        color: $color-white;
+        padding-top: 2px;
+    }
+}
+
+.designed {
+    margin-left: auto;
+    
+    a {
+        @include font(16px, 52px, 500);
+        color: $color-white;
+        text-decoration: none;
+        transition: 0.5s;
+
+        &:hover {
+            background: $color-orange-grad;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.backstage {
+    background-color: $color-white;
+    background-image: url(../assets/images/flower_foto1.png);
+    background-position: right top 12px;
+    background-repeat: no-repeat;
+
+    &__image {
+        max-width: 52.5%;
+        height: 403px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__text {
+        width: 40.1%;
+        text-align: left;
+        color: $color-black-blue;
+    }
+
+    &__title {
+        @include font(48px, 58px, 400);
+        margin-bottom: 20px;
+    }
+
+    &__founded {
+        @include font(16px, 21px, 400);
+    }
+    
+    &__subtitle {
+        @include font(24px, 29px, 400);
+        margin-top: 54px;
+        margin-bottom: 33px;
+    }
+
+    &__goal {
+        @include font(16px, 22px, 400);
+    }
+}
