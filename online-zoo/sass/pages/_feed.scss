@@ -27,7 +27,13 @@
     &__text {
         @include font(16px, 21px, 400);
         padding-left: 99px; 
-        margin-bottom: 60px; 
+        margin-bottom: 60px;
+        
+        a {
+            color: $color-black-blue;
+            text-decoration: none;
+            border-bottom: 1px solid $color-border-link;
+        }
     }
 
     &__scheme-title {
