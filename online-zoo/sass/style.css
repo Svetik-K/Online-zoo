@@ -22,6 +22,8 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -79,6 +81,50 @@ table {
   margin-right: 99px;
 }
 
+.button_choose {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  border-radius: 25px;
+  color: #FFFFFF;
+  display: block;
+  margin: 0 auto;
+}
+
+.button_feed {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  color: #FFFFFF;
+  border-radius: 25px;
+  display: block;
+  margin: 0 auto;
+}
+
+.button_feedback {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  color: #FFFFFF;
+  border-radius: 5px;
+}
+
+.button_donate {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  color: #FFFFFF;
+  border-radius: 5px;
+}
+
 .button_left {
   width: 62px;
   height: 62px;
@@ -121,38 +167,20 @@ table {
   background-repeat: no-repeat;
 }
 
-.button_choose {
+.button_submit {
+  width: 129px;
+  height: 42px;
   font-size: 16px;
   line-height: 22px;
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
   font-family: "Roboto", sans-serif;
-  border-radius: 25px;
-  color: #FFFFFF;
-  display: block;
-  margin: 0 auto;
-}
-
-.button_feed {
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 500;
-  font-style: normal;
-  font-family: "Roboto", sans-serif;
-  color: #FFFFFF;
-  border-radius: 25px;
-  display: block;
-  margin: 0 auto;
-}
-
-.button_feedback {
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 500;
-  font-style: normal;
-  font-family: "Roboto", sans-serif;
-  color: #FFFFFF;
+  color: #4B9200;
+  background-color: #F1F3F2;
   border-radius: 5px;
+  border: 1px solid #4B9200;
+  cursor: pointer;
+  margin-left: 6px;
 }
 
 .wrapper {
@@ -174,7 +202,7 @@ table {
 .backstage__wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 140px 0;
+  padding: 140.5px 0;
 }
 
 .choose__wrapper {
@@ -191,7 +219,16 @@ table {
 }
 
 .subscription__wrapper {
-  padding: 40px 0 0;
+  padding: 41px 0 34px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social__wrapper {
+  padding: 44px 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .header {
@@ -212,12 +249,13 @@ table {
 
 .logo__text {
   font-size: 19px;
-  line-height: 26px;
+  line-height: 23px;
   font-weight: 400;
   font-style: normal;
   font-family: "Roboto", sans-serif;
   text-align: center;
   color: #FFFFFF;
+  padding-top: 2px;
 }
 
 .designed {
@@ -278,6 +316,172 @@ table {
 .footer {
   width: 100%;
   background-color: #000000;
+}
+
+.logo a {
+  font-size: 19px;
+  line-height: 23px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.form__title {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  color: #FFFFFF;
+  margin-bottom: 14px;
+}
+
+input {
+  width: 228px;
+  height: 42px;
+  background-color: #000000;
+  outline: none;
+  border: 1px solid #F9804B;
+  color: #BDBDBD;
+  padding-left: 10px;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+input :focus {
+  outline: none;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  color: #BDBDBD;
+}
+
+::placeholder {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  color: #BDBDBD;
+}
+
+.links-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.links-list__item {
+  display: block;
+  align-items: center;
+  height: 26px;
+  margin-bottom: 10px;
+}
+
+.links-list__item:last-child {
+  margin-bottom: 0;
+}
+
+.links-list__link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.links-list__link .ico {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: rgba(196, 196, 196, 0.5);
+  margin-right: 15px;
+}
+
+.links-list__link .ico_fb {
+  background-image: url(../assets/icons/fb.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.links-list__link .ico_twit {
+  background-image: url(../assets/icons/twit.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.links-list__link .ico_insta {
+  background-image: url(../assets/icons/instagr.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.links-list__link .ico_youtb {
+  background-image: url(../assets/icons/youtb.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu:first-child {
+  padding-left: 62px;
+}
+
+.menu__item {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  padding-left: 58px;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: 0.5s;
+}
+
+.menu__link.active {
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.menu__link:hover {
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.social__copyright {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 100;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+
+.designed-by {
+  margin-bottom: 10px;
 }
 
 .watch {
@@ -426,6 +630,7 @@ table {
   height: 366px;
   margin-bottom: 5px;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .animal-card__image img {
@@ -474,6 +679,8 @@ table {
   width: 100%;
   height: 0;
   transition: all 0.5s ease;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .overlay__title {
@@ -486,7 +693,7 @@ table {
   top: 50%;
   left: 5%;
   transform: translateY(-50%);
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.9);
   text-transform: uppercase;
 }
 
@@ -519,6 +726,7 @@ table {
   color: #F9804B;
   text-align: center;
   margin-bottom: 30px;
+  padding-left: 3px;
 }
 
 .feed__subtitle {
@@ -571,7 +779,7 @@ table {
   width: 764px;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto 60px;
+  margin: 0 auto 63px;
 }
 
 .scheme__box {
@@ -638,13 +846,31 @@ table {
 }
 
 .testimonials__progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 51.6%;
   height: 8px;
   margin: 0 auto;
-  margin-bottom: 31px;
-  border: 1px solid #F9804B;
+  margin-bottom: 30px;
   border-radius: 5px;
+  background: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+}
+
+.progress__content {
+  width: calc(100% - 2px);
+  height: 6px;
   background-color: #F5F7F6;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.progress__bar {
+  background-color: #FE9013;
+  border-radius: 5px;
+  height: 100%;
+  width: 19%;
+  transition: width 0.1s linear;
 }
 
 .review {
@@ -669,7 +895,7 @@ table {
 
 .review__user-info {
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 }
 
 .review__user-info img {

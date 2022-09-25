@@ -14,9 +14,10 @@
     margin-right: 63px;
 
     &__text {
-        @include font(19px, 26px, 400);
+        @include font(19px, 23px, 400);
         text-align: center;
         color: $color-white;
+        padding-top: 2px;
     }
 }
 

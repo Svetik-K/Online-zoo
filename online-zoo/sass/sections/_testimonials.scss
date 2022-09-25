@@ -20,13 +20,35 @@
     }
 
     &__progress {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 51.6%;
         height: 8px;
         margin: 0 auto;
-        margin-bottom: 31px;
-        border: 1px solid $color-orange;
+        margin-bottom: 30px;
         border-radius: 5px;
+        background: $color-pink-grad;
+       
+    }
+}
+
+.progress {
+
+    &__content {
+        width: calc(100% - 2px);
+        height: 6px;
         background-color: #F5F7F6;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    &__bar {
+        background-color: $color-border-link;
+        border-radius: 5px;
+        height: 100%;
+        width: 19%;
+        transition: width 0.1s linear;
     }
 }
 
@@ -42,7 +64,7 @@
     &__content {
         width: 266px;
         height: 389px;
-        background: #F1F3F2;
+        background: $color-light-grey;
         border-radius: 20px;
         padding: 14px 13px 18px 16px;
         overflow: hidden;
@@ -51,7 +73,7 @@
 
     &__user-info {
         display: flex;
-        margin-bottom: 10px;
+        margin-bottom: 7px;
 
         img {
             padding-right: 11px;

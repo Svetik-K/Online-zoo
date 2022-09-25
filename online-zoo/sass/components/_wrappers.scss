@@ -17,7 +17,7 @@
 .backstage__wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 140px 0;
+    padding: 140.5px 0;
 }
 
 .choose__wrapper {
@@ -34,5 +34,14 @@
 }
 
 .subscription__wrapper {
-    padding: 40px 0 0;
+    padding: 41px 0 34px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social__wrapper {
+    padding: 44px 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }

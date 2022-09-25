@@ -11,14 +11,43 @@
     &:hover {
         background: $color-button-hover;
     }
+
+    &_watch {
+        @include font(16px, 22px, 500);
+        color: $color-white;
+        border-radius: 25px;
+        margin-right: 99px;
+    }
+
+    &_choose {
+        @include font(16px, 22px, 500);
+        border-radius: 25px;
+        color: $color-white;
+        display: block;
+        margin: 0 auto;
+    }
+
+    &_feed {
+        @include font(16px, 22px, 500);
+        color: $color-white;
+        border-radius: 25px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    &_feedback {
+        @include font(16px, 22px, 500);
+        color: $color-white;
+        border-radius: 5px;
+    }
+
+    &_donate {
+        @include font(16px, 22px, 500);
+        color: $color-white;
+        border-radius: 5px;
+    }
 }
 
-.button_watch {
-    @include font(16px, 22px, 500);
-    color: $color-white;
-    border-radius: 25px;
-    margin-right: 99px;
-}
 
 .button_left {
     width: 62px;
@@ -63,24 +92,14 @@
 
 }
 
-.button_choose {
-    @include font(16px, 22px, 500);
-    border-radius: 25px;
-    color: $color-white;
-    display: block;
-    margin: 0 auto;
-}
-
-.button_feed {
-    @include font(16px, 22px, 500);
-    color: $color-white;
-    border-radius: 25px;
-    display: block;
-    margin: 0 auto;
-}
-
-.button_feedback {
-    @include font(16px, 22px, 500);
-    color: $color-white;
+.button_submit {
+    width: 129px;
+    height: 42px;
+    @include font(16px, 22px, 400);
+    color: $color-green;
+    background-color: $color-light-grey;
     border-radius: 5px;
+    border: 1px solid $color-green;
+    cursor: pointer;
+    margin-left: 6px;
 }

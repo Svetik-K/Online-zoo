@@ -2,3 +2,148 @@
     width: 100%;
     background-color: $color-black;
 }
+
+.logo {
+
+    a {
+        @include font(19px, 23px, 400);
+        text-align: center;
+        color: $color-white;
+        text-decoration: none; 
+    }
+}
+
+.form {
+
+    &__title {
+        @include font(24px, 29px, 400);
+        color: $color-white;
+        margin-bottom: 14px;
+    }
+
+}
+
+input {
+    width: 228px;
+    height: 42px;
+    background-color: $color-black;
+    outline: none;
+    border: 1px solid $color-orange;
+    color: $color-placeholder;
+    padding-left: 10px;
+    border-radius: 2px;
+    box-sizing: border-box;
+
+    :focus {
+        outline: none;
+        @include font(16px, 22px, 400);
+        color: $color-placeholder;
+    }
+}
+
+::placeholder {
+    @include font(16px, 22px, 400);
+    color: $color-placeholder;
+}
+
+.links-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+
+    &__item {
+        display: block;
+        align-items: center;
+        height: 26px;
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        @include font(16px, 22px, 400);
+        color: $color-white;
+        text-decoration: none;
+
+        .ico {
+            display: inline-block;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            background-color: rgba(196, 196, 196, 0.5);
+            margin-right: 15px;
+
+            &_fb {
+                background-image: url(../assets/icons/fb.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            &_twit {
+                background-image: url(../assets/icons/twit.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            &_insta {
+                background-image: url(../assets/icons/instagr.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            &_youtb {
+                background-image: url(../assets/icons/youtb.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}
+
+.menu {
+    display: flex;
+
+    &:first-child {
+        padding-left: 62px; 
+    }
+
+    &__item {
+        @include font(16px, 22px, 500);
+        padding-left: 58px;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $color-white;
+        transition: 0.5s;
+
+        &.active {
+            background: $color-orange-grad;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        &:hover {
+            background: $color-orange-grad;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    }
+}
+
+.social__copyright {
+    @include font(16px, 21px, 100);
+    color: $color-white;
+    opacity: 0.7;
+}
+
+.designed-by {
+    margin-bottom: 10px;
+}
