@@ -125,6 +125,17 @@ table {
   border-radius: 5px;
 }
 
+.button_feed-friend {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  color: #FFFFFF;
+  border-radius: 25px;
+  margin-bottom: 30px;
+}
+
 .button_left {
   width: 62px;
   height: 62px;
@@ -175,10 +186,10 @@ table {
   font-weight: 400;
   font-style: normal;
   font-family: "Roboto", sans-serif;
-  color: #4B9200;
+  color: #333B41;
   background-color: #F1F3F2;
   border-radius: 5px;
-  border: 1px solid #4B9200;
+  border: 1px solid #333B41;
   cursor: pointer;
   margin-left: 6px;
 }
@@ -339,7 +350,7 @@ table {
   margin-bottom: 14px;
 }
 
-input {
+.email-input {
   width: 228px;
   height: 42px;
   background-color: #000000;
@@ -351,14 +362,15 @@ input {
   box-sizing: border-box;
 }
 
-input :focus {
+.email-input:focus {
   outline: none;
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 400;
-  font-style: normal;
-  font-family: "Roboto", sans-serif;
   color: #BDBDBD;
+  border: 1px solid #4B9200;
+}
+
+.email-input:focus + .button_submit {
+  border: 1px solid #4B9200;
+  color: #4B9200;
 }
 
 ::placeholder {
@@ -398,6 +410,15 @@ input :focus {
   font-family: "Roboto", sans-serif;
   color: #FFFFFF;
   text-decoration: none;
+  transition: 0.5s;
+}
+
+.links-list__link:hover {
+  color: #4B9200;
+}
+
+.links-list__link:active {
+  color: #4B9200;
 }
 
 .links-list__link .ico {
@@ -407,6 +428,11 @@ input :focus {
   border-radius: 50%;
   background-color: rgba(196, 196, 196, 0.5);
   margin-right: 15px;
+  transition: 0.5s;
+}
+
+.links-list__link .ico:hover {
+  background-color: #4B9200;
 }
 
 .links-list__link .ico_fb {
@@ -933,5 +959,225 @@ input :focus {
   font-style: normal;
   font-family: "Roboto", sans-serif;
   color: #BDBDBD;
+}
+
+.panda {
+  width: 100%;
+  height: 390px;
+  background-image: url(../assets/images/panda_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.donation-info {
+  padding: 40px 0 180px;
+  background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+}
+
+.donation-info__title {
+  font-size: 36px;
+  line-height: 47px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.donation-info__text {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+}
+
+.donation-info__subtitle {
+  font-size: 36px;
+  line-height: 47px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  color: #FE9013;
+  margin-bottom: 60px;
+}
+
+.pick-friend {
+  width: 100%;
+  padding: 40px 92px 62px;
+  background-color: rgba(255, 255, 255, 0.52);
+  border-radius: 20px;
+}
+
+.pick-friend__title {
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  color: #FE9013;
+  margin-bottom: 20px;
+}
+
+.pick-friend__text {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  color: #333B41;
+  margin-bottom: 60px;
+}
+
+.pick-friend__amount {
+  font-size: 16px;
+  line-height: 22.4px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.pick-friend__scale {
+  margin-bottom: 10px;
+}
+
+.pick-friend__prices {
+  width: 100%;
+  font-size: 26px;
+  line-height: 36.4px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  color: #333B41;
+  margin-bottom: 50px;
+}
+
+.pick-friend__prices span:nth-child(1), .pick-friend__prices span:nth-child(2), .pick-friend__prices span:nth-child(3) {
+  margin-right: 58px;
+}
+
+.pick-friend__prices span:nth-child(4), .pick-friend__prices span:nth-child(5), .pick-friend__prices span:nth-child(6) {
+  margin-right: 73px;
+}
+
+.pick-friend__prices span:nth-child(7) {
+  margin-right: 88px;
+}
+
+.counter {
+  height: 246px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+
+.counter__number {
+  width: 159px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.counter__number span {
+  font-size: 72px;
+  line-height: 57.6px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  margin-bottom: 11px;
+}
+
+.counter__number p {
+  font-size: 16px;
+  line-height: 22.4px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  color: #333B41;
+}
+
+.counter__cross {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  padding: 120px 64px 0 11px;
+  color: #333B41;
+}
+
+.radios {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 30px 9px 26px;
+  background-color: #404950;
+  z-index: 2;
+}
+
+.radios::after {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 26px;
+  width: 920px;
+  height: 2px;
+  background-color: #72828E;
+  z-index: -1;
+}
+
+input[type="radio"] {
+  width: 10px;
+  height: 10px;
+  margin: 0;
+}
+
+.another-amount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.another-amount__input {
+  width: 268px;
+  height: 54px;
+  border: 1px solid #929699;
+  padding-left: 9px;
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+  margin-bottom: 25px;
+}
+
+.another-amount__input:focus {
+  outline: none;
+  border: 1px solid #4B9200;
+}
+
+.another-amount__periods {
+  margin-bottom: 31px;
+}
+
+.another-amount__text {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  color: #333B41;
 }
 /*# sourceMappingURL=style.css.map */
