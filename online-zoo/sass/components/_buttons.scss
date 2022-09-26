@@ -45,6 +45,11 @@
         @include font(16px, 22px, 500);
         color: $color-white;
         border-radius: 5px;
+
+        a {
+            color: $color-white;
+            text-decoration: none; 
+        }
     }
 
     &_feed-friend {

@@ -125,6 +125,11 @@ table {
   border-radius: 5px;
 }
 
+.button_donate a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
 .button_feed-friend {
   font-size: 16px;
   line-height: 22px;
@@ -237,7 +242,7 @@ table {
 }
 
 .social__wrapper {
-  padding: 44px 0 50px;
+  padding: 45px 0 50px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -348,7 +353,7 @@ table {
   font-style: normal;
   font-family: "Roboto", sans-serif;
   color: #FFFFFF;
-  margin-bottom: 14px;
+  margin-bottom: 13px;
 }
 
 .email-input {
@@ -428,7 +433,7 @@ table {
   height: 26px;
   border-radius: 50%;
   background-color: rgba(196, 196, 196, 0.5);
-  margin-right: 14px;
+  margin-right: 13px;
   transition: 0.5s;
 }
 
@@ -806,7 +811,7 @@ table {
   width: 764px;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto 63px;
+  margin: 0 auto 62px;
 }
 
 .scheme__box {
@@ -982,18 +987,25 @@ table {
   font-style: normal;
   font-family: "Roboto", sans-serif;
   color: #FFFFFF;
-  margin-bottom: 9px;
+  margin-bottom: 8.5px;
 }
 
 .donation-info__text {
-  font-size: 12px;
-  line-height: 20.5px;
-  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 300;
   font-style: normal;
   font-family: "Roboto", sans-serif;
   color: #FFFFFF;
-  letter-spacing: 0.659px;
   margin-bottom: 47px;
+}
+
+.donation-info__text span {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
 }
 
 .donation-info__subtitle {
@@ -1124,9 +1136,11 @@ table {
 .radios {
   position: relative;
   width: 100%;
+  height: 27px;
   display: flex;
   justify-content: space-between;
-  padding: 8px 30px 9px 26px;
+  align-items: center;
+  padding: 8px 15px 9px 11px;
   background-color: #404950;
   z-index: 2;
 }
@@ -1143,49 +1157,19 @@ table {
 }
 
 .radios__item {
-  position: relative;
-  appearance: none;
-  background-color: #FFEE2E;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  margin: 0;
-  display: grid;
-  place-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  background-image: url(../assets/icons/yellow_dot.svg);
+  background-position: center;
+  background-repeat: no-repeat;
   cursor: pointer;
 }
 
-.radios__item::before {
-  content: "";
-  position: absolute;
-  left: -8.5px;
-  top: -8.5px;
-  width: 23px;
-  height: 23px;
-  border-radius: 50%;
-  border: 2px solid #FE9013;
-  background-color: transparent;
-  transform: scale(0);
-  transition: 120ms transform ease-in-out;
-}
-
-.radios__item::after {
-  content: "";
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 2px solid #FE9013;
-  background-color: transparent;
-  transform: scale(0);
-  transition: 120ms transform ease-in-out;
-}
-
-.radios__item:checked::before {
-  transform: scale(1);
-}
-
-.radios__item:checked::after {
-  transform: scale(1);
+.radios__item:nth-child(3) {
+  background: url(../assets/icons/yellow_dot.svg), url(../assets/icons/roller_icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .another-amount {
@@ -1201,6 +1185,7 @@ table {
   height: 54px;
   border: 1px solid #929699;
   padding-left: 9px;
+  padding-right: 0;
   background-color: transparent;
   font-size: 16px;
   line-height: 22px;
@@ -1209,7 +1194,7 @@ table {
   font-family: "Roboto", sans-serif;
   outline: none;
   box-sizing: border-box;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 
 .another-amount__input:focus {
@@ -1224,8 +1209,40 @@ table {
 .another-amount__periods {
   margin-bottom: 30px;
   display: flex;
-  gap: 50px;
-  margin-right: 13px;
+}
+
+.another-amount__periods label {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  color: #333B41;
+}
+
+.another-amount__periods label[for="monthly"] {
+  margin-right: 45px;
+}
+
+.another-amount__periods label[for="once"] {
+  margin-right: 20px;
+}
+
+.another-amount__periods input {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #FE9013;
+  background-color: transparent;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.another-amount__periods input:checked {
+  background-color: #4B9200;
+  border: 1px solid #4B9200;
 }
 
 .another-amount__text {
@@ -1235,48 +1252,5 @@ table {
   font-style: normal;
   font-family: "Roboto", sans-serif;
   color: #333B41;
-}
-
-.input-group {
-  display: flex;
-  align-items: center;
-}
-
-.input-group p {
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 400;
-  font-style: normal;
-  font-family: "Roboto", sans-serif;
-  color: #333B41;
-}
-
-.radio-period {
-  appearance: none;
-  background-color: transparent;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  margin: 0;
-  border: 1px solid #FE9013;
-  display: grid;
-  place-content: center;
-  cursor: pointer;
-  margin-right: 10px;
-}
-
-.radio-period::after {
-  content: "";
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background-color: #4B9200;
-  transform: scale(0);
-  transition: 120ms transform ease-in-out;
-  border: none;
-}
-
-.radio-period:checked::after {
-  transform: scale(1);
 }
 /*# sourceMappingURL=style.css.map */

@@ -5,14 +5,17 @@
     &__title {
         @include font(36px, 47px, 400);
         color: $color-white;
-        margin-bottom: 9px;
+        margin-bottom: 8.5px;
     }
 
     &__text {
-        @include font(12px, 20.5px, 500);
+        @include font(14px, 22px, 300);
         color: $color-white;
-        letter-spacing: 0.659px;
         margin-bottom: 47px;
+
+        span {
+            @include font(14px, 22px, 400);
+        }
     }
 
     &__subtitle {
@@ -119,9 +122,11 @@
 .radios {
     position: relative;
     width: 100%;
+    height: 27px;
     display: flex;
     justify-content: space-between;
-    padding: 8px 30px 9px 26px;
+    align-items: center;
+    padding: 8px 15px 9px 11px;
     background-color: #404950;
     z-index: 2;
 
@@ -137,51 +142,20 @@
     }
 
     &__item {
-        position: relative;
-        -webkit-appearance: none;
-        appearance: none;
-        background-color: $color-yellow;
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        margin: 0;
-        display: grid;
-        place-content: center;
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        background-image: url(../assets/icons/yellow_dot.svg);
+        background-position: center;
+        background-repeat: no-repeat;
         cursor: pointer;
 
-        &::before {
-            content: "";
-            position: absolute;
-            left: -8.5px;
-            top: -8.5px;
-            width: 23px;
-            height: 23px;
-            border-radius: 50%;
-            border: 2px solid $color-border-link;
-            background-color: transparent;
-            transform: scale(0);
-            transition: 120ms transform ease-in-out;
+        &:nth-child(3) {
+            background: url(../assets/icons/yellow_dot.svg), url(../assets/icons/roller_icon.svg);
+            background-position: center;
+            background-repeat: no-repeat;
         }
-
-        &::after {
-            content: "";
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            border: 2px solid $color-border-link;
-            background-color: transparent;
-            transform: scale(0);
-            transition: 120ms transform ease-in-out;
-        }
-    
-        &:checked::before {
-            transform: scale(1);
-        }
-    
-        &:checked::after {
-            transform: scale(1);
-        }
-    }
+    }   
 }
 
 .another-amount {
@@ -196,11 +170,12 @@
         height: 54px;
         border: 1px solid #929699;
         padding-left: 9px;
+        padding-right: 0;
         background-color: transparent;
         @include font(16px, 22px, 400);
         outline: none;
         box-sizing: border-box;
-        margin-bottom: 25px;
+        margin-bottom: 24px;
 
         &:focus {
             outline: none;
@@ -215,8 +190,36 @@
     &__periods {
         margin-bottom: 30px;
         display: flex;
-        gap: 50px;
-        margin-right: 13px;
+
+        label {
+            @include font(16px, 22px, 400);
+            color: $color-black-blue; 
+
+            &[for="monthly"] {
+                margin-right: 45px;
+            }
+
+            &[for="once"] {
+                margin-right: 20px;
+            }
+        }
+
+        input {
+            appearance: none;
+            -webkit-appearance: none;
+            width: 16px;
+            height: 16px;
+            border: 1px solid $color-border-link;
+            background-color: transparent;
+            border-radius: 50%;
+            margin-right: 10px;
+            cursor: pointer;
+
+            &:checked {
+                background-color: $color-green;
+                border: 1px solid $color-green;
+            }
+        }
     }
 
     &__text {
@@ -225,44 +228,5 @@
     }
 }
 
-.input-group {
-    display: flex;
-    align-items: center;
 
-    
-    p {
-        @include font(16px, 22px, 400);
-        color: $color-black-blue;
-    }
-    
-}
 
-.radio-period {
-    -webkit-appearance: none;
-    appearance: none;
-    background-color: transparent;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    margin: 0;
-    border: 1px solid $color-border-link;
-    display: grid;
-    place-content: center;
-    cursor: pointer;
-    margin-right: 10px; 
-
-    &::after {
-        content: "";
-        width: 16px;
-        height: 16px;
-        border-radius: 50%;
-        background-color: $color-green;
-        transform: scale(0);
-        transition: 120ms transform ease-in-out;
-        border: none;
-    }
-
-    &:checked::after {
-        transform: scale(1);
-    }
-}

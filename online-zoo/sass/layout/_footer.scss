@@ -18,7 +18,7 @@
     &__title {
         @include font(24px, 29px, 400);
         color: $color-white;
-        margin-bottom: 14px;
+        margin-bottom: 13px;
     }
 
 }
@@ -90,7 +90,7 @@
             height: 26px;
             border-radius: 50%;
             background-color: rgba(196, 196, 196, 0.5);
-            margin-right: 14px;
+            margin-right: 13px;
             transition: 0.5s;
 
             &:hover {

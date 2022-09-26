@@ -8,7 +8,7 @@
     <title>Donate</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="wrapper header__wrapper">
             <div class="logo">
                 <h1 class="logo__text"><a href="../../pages/main/index.html">PetStory online</a></h1>
@@ -23,7 +23,7 @@
                 </ul>
             </nav>
             <div class="designed">
-                <a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online?node-id=0%3A1">Designed by ©</a>
+                <a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online?node-id=0%3A1" target="_blank">Designed by ©</a>
             </div>
         </div>
     </header>
@@ -34,7 +34,7 @@
         <section class="donation-info">
             <div class="wrapper donation-info__wrapper">
                 <h3 class="donation-info__title">THE ZOO HAS OFFICIALLY REOPENED BUT WE STILL NEED YOUR HELP!</h3>
-                <p class="donation-info__text">Even though the Zoo has been able to reopen, we are at a greatly reduced capacity with educational programs and public and private events cancelled or postponed for additional months. We need you now more than ever to help ensure that we overcome these challenges. We have been actively raising funds in the community, and we are grateful for the generosity.  But much more support is still needed, and we need your help! Please consider a gift today – no matter what size – to help us sustain our mission.</p>
+                <p class="donation-info__text"><span class="text-bold">Even though the Zoo has been able to reopen, we are at a greatly reduced capacity with educational programs and public and private events cancelled or postponed for additional months.</span> We need you now more than ever to help ensure that we overcome these challenges. We have been actively raising funds in the community, and we are grateful for the generosity. <span class="text-bold">&nbsp;But much more support is still needed, and we need your help! Please consider a gift today – no matter what size – to help us sustain our mission.</span></p>
                 <h3 class="donation-info__subtitle">Donation Information</h3>
                 <div class="pick-friend">
                     <h2 class="pick-friend__title">Pick and feed a friend</h2>
@@ -52,30 +52,26 @@
                     <p class="pick-friend__amount">Amount</p>
                     <div class="pick-friend__scale">
                         <div class="radios">
-                            <input type="radio" name="radio" class="radios__item" id="radio1">
-                            <input type="radio" name="radio" class="radios__item" id="radio2">
-                            <input type="radio" name="radio" class="radios__item" id="radio3">
-                            <input type="radio" name="radio" class="radios__item" id="radio4">
-                            <input type="radio" name="radio" class="radios__item" id="radio5">
-                            <input type="radio" name="radio" class="radios__item" id="radio6">
-                            <input type="radio" name="radio" class="radios__item" id="radio7">
-                            <input type="radio" name="radio" class="radios__item" id="radio8">
+                            <div class="radios__item"></div>
+                            <div class="radios__item"></div>
+                            <div class="radios__item"></div>
+                            <div class="radios__item"></div>
+                            <div class="radios__item"></div>
+                            <div class="radios__item"></div>
+                            <div class="radios__item"></div>
+                            <div class="radios__item"></div>
                         </div>    
                     </div>
                     <div class="pick-friend__prices">
                         <span class="price">$5000</span><span class="price">$2000</span><span class="price text-orange">$1000</span><span class="price">$500</span><span class="price">$250</span><span class="price">$100</span><span class="price">$50</span><span class="price">$25</span>
                     </div>
                     <div class="another-amount">
-                        <input type="number" placeholder="Another amount&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$" class="another-amount__input">
+                        <input type="number" placeholder="Another amount&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$" class="another-amount__input">
                         <div class="another-amount__periods">
-                            <div class="input-group">
-                                <input type="radio" class="radio-period" id="monthly">
-                                <p>Monthly</p>
-                            </div>
-                            <div class="input-group">
-                                <input type="radio" class="radio-period" id="once">
-                                <p>Once</p> 
-                            </div>    
+                            <input type="radio" name="period" class="radio-period" id="monthly">
+                            <label for="monthly">Monthly</label>
+                            <input type="radio" name="period" class="radio-period" id="once" checked>
+                            <label for="once">Once</label>         
                         </div>
                         <button class="button button_feed-friend">Feed a friend now</button>
                         <p class="another-amount__text">Share with your friends on social networks</p>
@@ -89,30 +85,30 @@
         <div class="subscription">
             <div class="wrapper subscription__wrapper">
                 <div class="logo">
-                    <h5 class="logo__text"><a href="#header">PetStory online</a></h5>
+                    <h5 class="logo__text"><a href="../main/index.html">PetStory online</a></h5>
                 </div>
                 <form class="subscription__form">
                     <h4 class="form__title">Subscribe to our news</h4>
-                    <input type="email" placeholder="Enter your email" class="email-input">
+                    <input type="email" placeholder="Enter your email" class="email-input" required>
                     <button type="submit" class="button_submit">Submit</button>
                 </form>  
             </div>
             <div class="wrapper">
-                <button class="button button_donate">donate for volunteers</button>
+                <button class="button button_donate"><a href="#header">donate for volunteers</a></button>
             </div>
             <div class="social">
                 <div class="wrapper social__wrapper">
                     <div class="social__links">
                         <ul class="links-list">
-                            <li class="links-list__item"><a href="https://www.facebook.com/" class="links-list__link" target="_blank"><p class="ico ico_fb"></p>Facebook</a></li>
-                            <li class="links-list__item"><a href="https://twitter.com/" class="links-list__link" target="_blank"><p class="ico ico_twit"></p>Twitter</a></li>
-                            <li class="links-list__item"><a href="https://www.instagram.com/" class="links-list__link" target="_blank"><p class="ico ico_insta"></p>Instagram</a></li>
-                            <li class="links-list__item"><a href="https://www.youtube.com/" class="links-list__link" target="_blank"><p class="ico ico_youtb"></p>YouTube</a></li>
+                            <li class="links-list__item"><a href="https://www.facebook.com/" class="links-list__link" target="_blank"><span class="ico ico_fb"></span>Facebook</a></li>
+                            <li class="links-list__item"><a href="https://twitter.com/" class="links-list__link" target="_blank"><span class="ico ico_twit"></span>Twitter</a></li>
+                            <li class="links-list__item"><a href="https://www.instagram.com/" class="links-list__link" target="_blank"><span class="ico ico_insta"></span>Instagram</a></li>
+                            <li class="links-list__item"><a href="https://www.youtube.com/" class="links-list__link" target="_blank"><span class="ico ico_youtb"></span>YouTube</a></li>
                         </ul>
                     </div>
                     <div class="social__menu">
                         <ul class="menu">
-                            <li class="menu__item"><a href="#" class="menu__link">About</a></li>
+                            <li class="menu__item"><a href="../main/index.html" class="menu__link">About</a></li>
                             <li class="menu__item"><a href="#" class="menu__link">Map</a></li>
                             <li class="menu__item"><a href="#" class="menu__link">Zoos</a></li>
                             <li class="menu__item"><a href="#footer" class="menu__link">Contact us</a></li>
