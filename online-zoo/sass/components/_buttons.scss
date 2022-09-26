@@ -45,6 +45,19 @@
         @include font(16px, 22px, 500);
         color: $color-white;
         border-radius: 5px;
+
+        a {
+            color: $color-white;
+            text-decoration: none; 
+        }
+    }
+
+    &_feed-friend {
+        @include font(16px, 22px, 500);
+        color: $color-white;
+        border-radius: 25px;
+        margin-bottom: 29px;
+        margin-left: 5px;
     }
 }
 
@@ -96,10 +109,10 @@
     width: 129px;
     height: 42px;
     @include font(16px, 22px, 400);
-    color: $color-green;
+    color: $color-black-blue;
     background-color: $color-light-grey;
     border-radius: 5px;
-    border: 1px solid $color-green;
+    border: 1px solid $color-black-blue;
     cursor: pointer;
     margin-left: 6px;
 }

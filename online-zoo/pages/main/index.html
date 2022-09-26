@@ -5,25 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../sass/style.css">
+    <link rel="icon" type="image/icon" href="../../assets/icons/panda_favico.ico">
     <title>Online Zoo</title>
 </head>
 <body>
     <header class="header" id="header">
         <div class="wrapper header__wrapper">
             <div class="logo">
-                <h1 class="logo__text">PetStory online</h1>
+                <h1 class="logo__text"><a href="#">PetStory online</a></h1>
             </div>
             <nav class="navigation">
                 <ul class="nav">
                     <li class="nav__item"><a href="#" class="nav__link active">About</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">Map</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">Zoos</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Donate</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Contact us</a></li>
+                    <li class="nav__item"><a href="../donate/index.html" class="nav__link">Donate</a></li>
+                    <li class="nav__item"><a href="#footer" class="nav__link">Contact us</a></li>
                 </ul>
             </nav>
             <div class="designed">
-                <a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online?node-id=0%3A1">Designed by ©</a>
+                <a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online?node-id=0%3A1" target="_blank">Designed by ©</a>
             </div>
         </div>
     </header>
@@ -139,7 +140,7 @@
                 <h3 class="feed__title">Pick and feed a friend</h3>
                 <h4 class="feed__subtitle">We know the animals bring you joy, and in these extraordinary times, we’re glad.</h4>
                 <p class="feed__covid">During a time when the COVID-19 epidemic is touching all of our lives, we’re proud and glad that people around the world find joy in PetStory.</p>
-                <p class="feed__text">Even though the zoo has reopened, we need you now more than ever to help us deal with these problems. Please consider a&nbsp;gift&nbsp;to&nbsp;our&nbsp;<a href="#">Emergency&nbsp;Support&nbsp;Fund </a>.</p>
+                <p class="feed__text">Even though the zoo has reopened, we need you now more than ever to help us deal with these problems. Please consider a&nbsp;gift&nbsp;to&nbsp;our&nbsp;<a href="../donate/index.html">Emergency&nbsp;Support&nbsp;Fund </a>.</p>
                 <h3 class="feed__scheme-title">How it works</h3>
                 <div class="scheme">
                     <div class="scheme__box">
@@ -243,7 +244,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="subscription">
             <div class="wrapper subscription__wrapper">
                 <div class="logo">
@@ -251,21 +252,21 @@
                 </div>
                 <form class="subscription__form">
                     <h4 class="form__title">Subscribe to our news</h4>
-                    <input type="email" placeholder="Enter your email">
+                    <input type="email" placeholder="Enter your email" class="email-input" required>
                     <button type="submit" class="button_submit">Submit</button>
                 </form>  
             </div>
             <div class="wrapper">
-                <button class="button button_donate">donate for volunteers</button>
+                <button class="button button_donate"><a href="../donate/index.html">donate for volunteers</a></button>
             </div>
             <div class="social">
                 <div class="wrapper social__wrapper">
                     <div class="social__links">
                         <ul class="links-list">
-                            <li class="links-list__item"><a href="#" class="links-list__link"><p class="ico ico_fb"></p>Facebook</a></li>
-                            <li class="links-list__item"><a href="#" class="links-list__link"><p class="ico ico_twit"></p>Twitter</a></li>
-                            <li class="links-list__item"><a href="#" class="links-list__link"><p class="ico ico_insta"></p>Instagram</a></li>
-                            <li class="links-list__item"><a href="#" class="links-list__link"><p class="ico ico_youtb"></p>YouTube</a></li>
+                            <li class="links-list__item"><a href="https://www.facebook.com/" class="links-list__link" target="_blank"><span class="ico ico_fb"></span>Facebook</a></li>
+                            <li class="links-list__item"><a href="https://twitter.com/" class="links-list__link" target="_blank"><span class="ico ico_twit"></span>Twitter</a></li>
+                            <li class="links-list__item"><a href="https://www.instagram.com/" class="links-list__link" target="_blank"><span class="ico ico_insta"></span>Instagram</a></li>
+                            <li class="links-list__item"><a href="https://www.youtube.com/" class="links-list__link" target="_blank"><span class="ico ico_youtb"></span>YouTube</a></li>
                         </ul>
                     </div>
                     <div class="social__menu">
@@ -273,7 +274,7 @@
                             <li class="menu__item"><a href="#" class="menu__link active">About</a></li>
                             <li class="menu__item"><a href="#" class="menu__link">Map</a></li>
                             <li class="menu__item"><a href="#" class="menu__link">Zoos</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">Contact us</a></li>
+                            <li class="menu__item"><a href="#footer" class="menu__link">Contact us</a></li>
                         </ul>
                     </div>
                     <div class="social__copyright">

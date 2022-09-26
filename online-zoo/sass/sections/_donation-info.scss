@@ -1,0 +1,232 @@
+.donation-info {
+    padding: 40px 0 180px;
+    background: $color-orange-border;
+
+    &__title {
+        @include font(36px, 47px, 400);
+        color: $color-white;
+        margin-bottom: 8.5px;
+    }
+
+    &__text {
+        @include font(14px, 22px, 300);
+        color: $color-white;
+        margin-bottom: 47px;
+
+        span {
+            @include font(14px, 22px, 400);
+        }
+    }
+
+    &__subtitle {
+        @include font(36px, 47px, 400);
+        color: $color-border-link;
+        margin-bottom: 60px;
+    }
+}
+
+.pick-friend {
+    width: 100%;
+    padding: 40px 92px 62px;
+    background-color: rgba(255, 255, 255, 0.52);
+    border-radius: 20px;
+
+    &__title {
+        @include font(48px, 58px, 400);
+        color: $color-border-link;
+        padding-left: 250px;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        @include font(24px, 29px, 400);
+        color: $color-black-blue;
+        margin-bottom: 60px;
+    }
+
+    &__amount {
+        @include font(16px, 22.4px, 400);
+        color: $color-black;
+        padding-left: 4px;
+        margin-bottom: 17px;
+    }
+
+    &__scale {
+        margin-bottom: 13px;
+    }
+
+    &__prices {
+        width: 100%;
+        @include font(26px, 36.4px, 500);
+        color: $color-black-blue;
+        margin-bottom: 49px;
+
+        span {
+
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3) {
+                margin-right: 55px;
+            }
+
+            &:nth-child(4),
+            &:nth-child(5),
+            &:nth-child(6) {
+                margin-right: 71px;
+            }
+
+            &:nth-child(7) {
+                margin-right: 88px;
+            }
+        }
+    }
+}
+
+.text-orange {
+    color: $color-border-link;
+}
+
+.counter {
+    height: 246px;
+    display: flex;
+    padding-left: 215px;
+    margin-bottom: 48px;
+
+    &__number {
+        width: 159px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 55px;
+
+        span {
+            @include font(72px, 57.6px, 500);
+            color: $color-black;
+            margin-bottom: 11px;
+        }
+
+        p {
+            @include font(16px, 22.4px, 400);
+            color: $color-black-blue;
+        }
+    }
+
+    &__cross {
+        @include font(14px, 14px, 400);
+        padding: 130px 67px 0 11px;
+        color: $color-black-blue;    
+    }
+}
+
+.radios {
+    position: relative;
+    width: 100%;
+    height: 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 15px 9px 11px;
+    background-color: #404950;
+    z-index: 2;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 12px;
+        left: 26px;
+        width: 920px;
+        height: 2px;
+        background-color: #72828E;
+        z-index: -1;
+    }
+
+    &__item {
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        background-image: url(../assets/icons/yellow_dot.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+
+        &:nth-child(3) {
+            background: url(../assets/icons/yellow_dot.svg), url(../assets/icons/roller_icon.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }   
+}
+
+.another-amount {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    &__input {
+        width: 268px;
+        height: 54px;
+        border: 1px solid #929699;
+        padding-left: 9px;
+        padding-right: 0;
+        background-color: transparent;
+        @include font(16px, 22px, 400);
+        outline: none;
+        box-sizing: border-box;
+        margin-bottom: 24px;
+
+        &:focus {
+            outline: none;
+            border: 1px solid $color-green;
+        }
+
+        &:focus::placeholder {
+            color: $color-green;
+        }
+    }
+
+    &__periods {
+        margin-bottom: 30px;
+        display: flex;
+
+        label {
+            @include font(16px, 22px, 400);
+            color: $color-black-blue; 
+
+            &[for="monthly"] {
+                margin-right: 45px;
+            }
+
+            &[for="once"] {
+                margin-right: 20px;
+            }
+        }
+
+        input {
+            appearance: none;
+            -webkit-appearance: none;
+            width: 16px;
+            height: 16px;
+            border: 1px solid $color-border-link;
+            background-color: transparent;
+            border-radius: 50%;
+            margin-right: 10px;
+            cursor: pointer;
+
+            &:checked {
+                background-color: $color-green;
+                border: 1px solid $color-green;
+            }
+        }
+    }
+
+    &__text {
+        @include font(16px, 22px, 400);
+        color: $color-black-blue;
+    }
+}
+
+
+
