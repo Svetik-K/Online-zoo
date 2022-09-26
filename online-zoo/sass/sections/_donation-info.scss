@@ -5,13 +5,14 @@
     &__title {
         @include font(36px, 47px, 400);
         color: $color-white;
-        margin-bottom: 10px;
+        margin-bottom: 9px;
     }
 
     &__text {
-        @include font(16px, 22px, 500);
+        @include font(12px, 20.5px, 500);
         color: $color-white;
-        margin-bottom: 40px;
+        letter-spacing: 0.659px;
+        margin-bottom: 47px;
     }
 
     &__subtitle {
@@ -29,8 +30,8 @@
 
     &__title {
         @include font(48px, 58px, 400);
-        text-align: center;
         color: $color-border-link;
+        padding-left: 250px;
         margin-bottom: 20px;
     }
 
@@ -43,31 +44,32 @@
     &__amount {
         @include font(16px, 22.4px, 400);
         color: $color-black;
-        margin-bottom: 10px;
+        padding-left: 4px;
+        margin-bottom: 17px;
     }
 
     &__scale {
-        margin-bottom: 10px;
+        margin-bottom: 13px;
     }
 
     &__prices {
         width: 100%;
         @include font(26px, 36.4px, 500);
         color: $color-black-blue;
-        margin-bottom: 50px;
+        margin-bottom: 49px;
 
         span {
 
             &:nth-child(1),
             &:nth-child(2),
             &:nth-child(3) {
-                margin-right: 58px;
+                margin-right: 55px;
             }
 
             &:nth-child(4),
             &:nth-child(5),
             &:nth-child(6) {
-                margin-right: 73px;
+                margin-right: 71px;
             }
 
             &:nth-child(7) {
@@ -77,10 +79,14 @@
     }
 }
 
+.text-orange {
+    color: $color-border-link;
+}
+
 .counter {
     height: 246px;
     display: flex;
-    justify-content: center;
+    padding-left: 215px;
     margin-bottom: 48px;
 
     &__number {
@@ -89,6 +95,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding-top: 55px;
 
         span {
             @include font(72px, 57.6px, 500);
@@ -104,7 +111,7 @@
 
     &__cross {
         @include font(14px, 14px, 400);
-        padding: 120px 64px 0 11px;
+        padding: 130px 67px 0 11px;
         color: $color-black-blue;    
     }
 }
@@ -128,12 +135,53 @@
         background-color: #72828E;
         z-index: -1;
     }
-}
 
-input[type="radio"] {
-    width: 10px;
-    height: 10px;
-    margin: 0;
+    &__item {
+        position: relative;
+        -webkit-appearance: none;
+        appearance: none;
+        background-color: $color-yellow;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin: 0;
+        display: grid;
+        place-content: center;
+        cursor: pointer;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: -8.5px;
+            top: -8.5px;
+            width: 23px;
+            height: 23px;
+            border-radius: 50%;
+            border: 2px solid $color-border-link;
+            background-color: transparent;
+            transform: scale(0);
+            transition: 120ms transform ease-in-out;
+        }
+
+        &::after {
+            content: "";
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 2px solid $color-border-link;
+            background-color: transparent;
+            transform: scale(0);
+            transition: 120ms transform ease-in-out;
+        }
+    
+        &:checked::before {
+            transform: scale(1);
+        }
+    
+        &:checked::after {
+            transform: scale(1);
+        }
+    }
 }
 
 .another-amount {
@@ -151,20 +199,70 @@ input[type="radio"] {
         background-color: transparent;
         @include font(16px, 22px, 400);
         outline: none;
+        box-sizing: border-box;
         margin-bottom: 25px;
 
         &:focus {
             outline: none;
             border: 1px solid $color-green;
         }
+
+        &:focus::placeholder {
+            color: $color-green;
+        }
     }
 
     &__periods {
-        margin-bottom: 31px;
+        margin-bottom: 30px;
+        display: flex;
+        gap: 50px;
+        margin-right: 13px;
     }
 
     &__text {
         @include font(16px, 22px, 400);
         color: $color-black-blue;
+    }
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+
+    
+    p {
+        @include font(16px, 22px, 400);
+        color: $color-black-blue;
+    }
+    
+}
+
+.radio-period {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin: 0;
+    border: 1px solid $color-border-link;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+    margin-right: 10px; 
+
+    &::after {
+        content: "";
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: $color-green;
+        transform: scale(0);
+        transition: 120ms transform ease-in-out;
+        border: none;
+    }
+
+    &:checked::after {
+        transform: scale(1);
     }
 }

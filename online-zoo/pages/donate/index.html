@@ -11,7 +11,7 @@
     <header class="header">
         <div class="wrapper header__wrapper">
             <div class="logo">
-                <h1 class="logo__text">PetStory online</h1>
+                <h1 class="logo__text"><a href="../../pages/main/index.html">PetStory online</a></h1>
             </div>
             <nav class="navigation">
                 <ul class="nav">
@@ -52,24 +52,30 @@
                     <p class="pick-friend__amount">Amount</p>
                     <div class="pick-friend__scale">
                         <div class="radios">
-                            <input type="radio" name="radio" id="radio1">
-                            <input type="radio" name="radio" id="radio2">
-                            <input type="radio" name="radio" id="radio3">
-                            <input type="radio" name="radio" id="radio4">
-                            <input type="radio" name="radio" id="radio5">
-                            <input type="radio" name="radio" id="radio6">
-                            <input type="radio" name="radio" id="radio7">
-                            <input type="radio" name="radio" id="radio8">
+                            <input type="radio" name="radio" class="radios__item" id="radio1">
+                            <input type="radio" name="radio" class="radios__item" id="radio2">
+                            <input type="radio" name="radio" class="radios__item" id="radio3">
+                            <input type="radio" name="radio" class="radios__item" id="radio4">
+                            <input type="radio" name="radio" class="radios__item" id="radio5">
+                            <input type="radio" name="radio" class="radios__item" id="radio6">
+                            <input type="radio" name="radio" class="radios__item" id="radio7">
+                            <input type="radio" name="radio" class="radios__item" id="radio8">
                         </div>    
                     </div>
                     <div class="pick-friend__prices">
-                        <span>$5000</span><span>$2000</span><span>$1000</span><span>$500</span><span>$250</span><span>$100</span><span>$50</span><span>$25</span>
+                        <span class="price">$5000</span><span class="price">$2000</span><span class="price text-orange">$1000</span><span class="price">$500</span><span class="price">$250</span><span class="price">$100</span><span class="price">$50</span><span class="price">$25</span>
                     </div>
                     <div class="another-amount">
-                        <input type="text" placeholder="Another amount" class="another-amount__input">
+                        <input type="number" placeholder="Another amount&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$" class="another-amount__input">
                         <div class="another-amount__periods">
-                            <input type="radio"><span>Monthly</span>
-                            <input type="radio"><span>Once</span>
+                            <div class="input-group">
+                                <input type="radio" class="radio-period" id="monthly">
+                                <p>Monthly</p>
+                            </div>
+                            <div class="input-group">
+                                <input type="radio" class="radio-period" id="once">
+                                <p>Once</p> 
+                            </div>    
                         </div>
                         <button class="button button_feed-friend">Feed a friend now</button>
                         <p class="another-amount__text">Share with your friends on social networks</p>

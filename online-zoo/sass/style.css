@@ -133,7 +133,8 @@ table {
   font-family: "Roboto", sans-serif;
   color: #FFFFFF;
   border-radius: 25px;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
+  margin-left: 5px;
 }
 
 .button_left {
@@ -427,7 +428,7 @@ table {
   height: 26px;
   border-radius: 50%;
   background-color: rgba(196, 196, 196, 0.5);
-  margin-right: 15px;
+  margin-right: 14px;
   transition: 0.5s;
 }
 
@@ -963,7 +964,7 @@ table {
 
 .panda {
   width: 100%;
-  height: 390px;
+  height: 387px;
   background-image: url(../assets/images/panda_bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -981,17 +982,18 @@ table {
   font-style: normal;
   font-family: "Roboto", sans-serif;
   color: #FFFFFF;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
 }
 
 .donation-info__text {
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 12px;
+  line-height: 20.5px;
   font-weight: 500;
   font-style: normal;
   font-family: "Roboto", sans-serif;
   color: #FFFFFF;
-  margin-bottom: 40px;
+  letter-spacing: 0.659px;
+  margin-bottom: 47px;
 }
 
 .donation-info__subtitle {
@@ -1017,8 +1019,8 @@ table {
   font-weight: 400;
   font-style: normal;
   font-family: "Roboto", sans-serif;
-  text-align: center;
   color: #FE9013;
+  padding-left: 250px;
   margin-bottom: 20px;
 }
 
@@ -1039,11 +1041,12 @@ table {
   font-style: normal;
   font-family: "Roboto", sans-serif;
   color: #000000;
-  margin-bottom: 10px;
+  padding-left: 4px;
+  margin-bottom: 17px;
 }
 
 .pick-friend__scale {
-  margin-bottom: 10px;
+  margin-bottom: 13px;
 }
 
 .pick-friend__prices {
@@ -1054,25 +1057,29 @@ table {
   font-style: normal;
   font-family: "Roboto", sans-serif;
   color: #333B41;
-  margin-bottom: 50px;
+  margin-bottom: 49px;
 }
 
 .pick-friend__prices span:nth-child(1), .pick-friend__prices span:nth-child(2), .pick-friend__prices span:nth-child(3) {
-  margin-right: 58px;
+  margin-right: 55px;
 }
 
 .pick-friend__prices span:nth-child(4), .pick-friend__prices span:nth-child(5), .pick-friend__prices span:nth-child(6) {
-  margin-right: 73px;
+  margin-right: 71px;
 }
 
 .pick-friend__prices span:nth-child(7) {
   margin-right: 88px;
 }
 
+.text-orange {
+  color: #FE9013;
+}
+
 .counter {
   height: 246px;
   display: flex;
-  justify-content: center;
+  padding-left: 215px;
   margin-bottom: 48px;
 }
 
@@ -1082,6 +1089,7 @@ table {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-top: 55px;
 }
 
 .counter__number span {
@@ -1109,7 +1117,7 @@ table {
   font-weight: 400;
   font-style: normal;
   font-family: "Roboto", sans-serif;
-  padding: 120px 64px 0 11px;
+  padding: 130px 67px 0 11px;
   color: #333B41;
 }
 
@@ -1134,10 +1142,50 @@ table {
   z-index: -1;
 }
 
-input[type="radio"] {
+.radios__item {
+  position: relative;
+  appearance: none;
+  background-color: #FFEE2E;
   width: 10px;
   height: 10px;
+  border-radius: 50%;
   margin: 0;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+
+.radios__item::before {
+  content: "";
+  position: absolute;
+  left: -8.5px;
+  top: -8.5px;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  border: 2px solid #FE9013;
+  background-color: transparent;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+}
+
+.radios__item::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #FE9013;
+  background-color: transparent;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+}
+
+.radios__item:checked::before {
+  transform: scale(1);
+}
+
+.radios__item:checked::after {
+  transform: scale(1);
 }
 
 .another-amount {
@@ -1160,6 +1208,7 @@ input[type="radio"] {
   font-style: normal;
   font-family: "Roboto", sans-serif;
   outline: none;
+  box-sizing: border-box;
   margin-bottom: 25px;
 }
 
@@ -1168,8 +1217,15 @@ input[type="radio"] {
   border: 1px solid #4B9200;
 }
 
+.another-amount__input:focus::placeholder {
+  color: #4B9200;
+}
+
 .another-amount__periods {
-  margin-bottom: 31px;
+  margin-bottom: 30px;
+  display: flex;
+  gap: 50px;
+  margin-right: 13px;
 }
 
 .another-amount__text {
@@ -1179,5 +1235,48 @@ input[type="radio"] {
   font-style: normal;
   font-family: "Roboto", sans-serif;
   color: #333B41;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
+.input-group p {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  color: #333B41;
+}
+
+.radio-period {
+  appearance: none;
+  background-color: transparent;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin: 0;
+  border: 1px solid #FE9013;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.radio-period::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #4B9200;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  border: none;
+}
+
+.radio-period:checked::after {
+  transform: scale(1);
 }
 /*# sourceMappingURL=style.css.map */
