@@ -991,7 +991,7 @@ table {
 }
 
 .donation-info__text {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 22px;
   font-weight: 400;
   font-style: normal;
@@ -1001,7 +1001,7 @@ table {
 }
 
 .donation-info__text span {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 22px;
   font-weight: 500;
   font-style: normal;

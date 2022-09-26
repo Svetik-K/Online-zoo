@@ -9,12 +9,12 @@
     }
 
     &__text {
-        @include font(14px, 22px, 400);
+        @include font(16px, 22px, 400);
         color: $color-white;
         margin-bottom: 47px;
 
         span {
-            @include font(14px, 22px, 500);   
+            @include font(16px, 22px, 500);   
         }
     }
 
