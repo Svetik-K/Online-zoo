@@ -31,3 +31,22 @@
 .text_yellow {
     color: $color-yellow;
 }
+
+@media all and (max-width: 1000px) {
+    .watch {
+
+        &__title {
+            width: 400px;
+            @include font(85px, 63px, 700);
+            margin-right: 56px;
+            margin-bottom: 40px;
+
+            &::before {
+                top: -54px;
+                left: -58px;
+                width: 367px;
+                height: 367px;
+            }
+        }
+    }
+}

@@ -61,6 +61,11 @@
     }
 }
 
+@media all and (max-width: 1000px) {
+    .button_watch {
+        margin-right: 107px;
+    }
+}
 
 .button_left {
     width: 62px;
@@ -103,6 +108,30 @@
         background-repeat: no-repeat;
     }
 
+}
+
+@media all and (max-width: 1290px) {
+    .button_left {
+        top: 480px;
+        left: 323px;
+    }
+
+    .button_right {
+        top: 480px;
+        right: 323px;
+    }
+}
+
+@media all and (max-width: 1200px) {
+    .button_left {
+        top: 410px;
+        left: 323px;
+    }
+
+    .button_right {
+        top: 410px;
+        right: 323px;
+    }
 }
 
 .button_submit {

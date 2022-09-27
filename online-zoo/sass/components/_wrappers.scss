@@ -3,6 +3,13 @@
     margin: 0 auto;
 }
 
+@media all and (max-width: 1200px)  {
+    .wrapper {
+        max-width: 940px;
+        margin: 0 auto;
+    }
+}
+
 .header__wrapper {
     display: flex;
 }
@@ -14,10 +21,23 @@
     padding: 85px 0 100px;
 }
 
+@media all and (max-width: 1000px) {
+    .watch__wrapper {
+        padding: 43px 0 47px;
+    }
+}
+
 .backstage__wrapper {
     display: flex;
     justify-content: space-between;
     padding: 140.5px 0;
+}
+
+@media all and (max-width: 1200px)  {
+    .backstage__wrapper {
+        align-items: center;
+        padding: 100px 0;
+    }
 }
 
 .choose__wrapper {
@@ -25,6 +45,13 @@
     max-width: 1324px;
     padding: 40px 0 100px;
     margin: 0 auto;
+}
+
+@media all and (max-width: 1200px)  {
+    .choose__wrapper {
+        max-width: 940px;
+        padding: 42px 0 140px;
+    }
 }
 
 .feed__wrapper {

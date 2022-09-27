@@ -17,6 +17,14 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 21px;
+
+   
+    }
+
+    @media all and (max-width: 1200px) {
+        .review:nth-child(4) {
+            display: none;
+        }
     }
 
     &__progress {
@@ -33,11 +41,17 @@
     }
 }
 
+@media all and (max-width: 1200px) {
+    .testimonials {
+        padding: 100px 0 140px;
+    }    
+}
+
 .progress {
 
     &__content {
-        width: calc(100% - 2px);
-        height: 6px;
+        width: calc(100% - 3px);
+        height: 5px;
         background-color: #F5F7F6;
         border-radius: 5px;
         cursor: pointer;
@@ -62,18 +76,18 @@
     background: $color-pink-grad;
 
     &__content {
-        width: 266px;
-        height: 389px;
+        width: 267px;
+        height: 388px;
         background: $color-light-grey;
         border-radius: 20px;
-        padding: 14px 13px 18px 16px;
+        padding: 13.5px 14px 18px 15.5px;
         overflow: hidden;
         box-sizing: border-box;
     }
 
     &__user-info {
         display: flex;
-        margin-bottom: 7px;
+        margin-bottom: 7.5px;
 
         img {
             padding-right: 11px;
@@ -89,6 +103,19 @@
         @include font(15px, 18px, 300);
         color: $color-grey;  
         
+    }
+}
+
+@media all and (max-width: 1200px) {
+    .review {
+        width: 293px;
+        height: 391px;
+
+        &__content {
+            width: 290px;
+            height: 388px;
+            padding: 14px 21px 18px 15px;
+        }
     }
 }
 

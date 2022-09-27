@@ -42,7 +42,13 @@
         text-align: center;
         margin-bottom: 40px;
     }
+}
 
+@media all and (max-width: 1200px) {
+    .feed {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
 }
 
 .scheme {
