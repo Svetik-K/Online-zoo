@@ -12,6 +12,10 @@
         background: $color-button-hover;
     }
 
+    &:active {
+        background-color: $color-green;
+    }
+
     &_watch {
         @include font(16px, 22px, 500);
         color: $color-white;
@@ -86,6 +90,10 @@
         background-position: center;
         background-repeat: no-repeat;
     }
+
+    &:active {
+        background-color: $color-green;
+    }
 }
 
 .button_right {
@@ -106,6 +114,10 @@
         background: url(../assets/icons/arr_right.svg), $color-button-hover;
         background-position: center;
         background-repeat: no-repeat;
+    }
+
+    &:active {
+        background-color: $color-green;
     }
 
 }

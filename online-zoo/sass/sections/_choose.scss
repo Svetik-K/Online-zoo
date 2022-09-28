@@ -58,8 +58,8 @@
     }
 
     &__content {
-        width: 364px;
-        height: 424px;
+        width: calc(100% - 2px);
+        height: calc(100% - 2px);
         border-radius: 5px;
         background-color: $color-white;
     }
@@ -111,11 +111,6 @@
     .animal-card {
         width: 294px;
         height: 354px;
-
-        &__content {
-            width: 292px;
-            height: 352px;
-        }
 
         &__image {
             height: 293px;

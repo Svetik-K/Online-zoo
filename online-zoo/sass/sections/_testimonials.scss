@@ -76,11 +76,11 @@
     background: $color-pink-grad;
 
     &__content {
-        width: 267px;
+        width: calc(100% - 3px);
         height: 388px;
         background: $color-light-grey;
         border-radius: 20px;
-        padding: 13.5px 14px 18px 15.5px;
+        padding: 13.5px 13px 18px 15.5px;
         overflow: hidden;
         box-sizing: border-box;
     }
@@ -112,7 +112,6 @@
         height: 391px;
 
         &__content {
-            width: 290px;
             height: 388px;
             padding: 14px 21px 18px 15px;
         }
