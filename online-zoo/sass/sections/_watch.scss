@@ -3,6 +3,10 @@
     background-repeat: no-repeat;
     background-position: top -80px center;
 
+    @media all and (max-width: 1000px) {
+        background-image: url(../assets/images/bg_main_1000.jpg);
+    }
+
     &__title {
         position: relative;
         width: 500px;
@@ -12,6 +16,13 @@
         color: $color-white;
         margin-bottom: 60px;
         z-index: 2;
+
+        @media all and (max-width: 1000px) {
+            width: 400px;
+            @include font(85px, 63px, 700);
+            margin-right: 56px;
+            margin-bottom: 44px;
+        }
 
         &::before {
             content: '';
@@ -24,24 +35,8 @@
             border-radius: 50%;
             background: $color-orange-grad;
             z-index: -1;
-        }
-    }
-}
 
-.text_yellow {
-    color: $color-yellow;
-}
-
-@media all and (max-width: 1000px) {
-    .watch {
-
-        &__title {
-            width: 400px;
-            @include font(85px, 63px, 700);
-            margin-right: 56px;
-            margin-bottom: 40px;
-
-            &::before {
+            @media all and (max-width: 1000px) {
                 top: -54px;
                 left: -58px;
                 width: 367px;
@@ -49,4 +44,8 @@
             }
         }
     }
+}
+
+.text_yellow {
+    color: $color-yellow;
 }

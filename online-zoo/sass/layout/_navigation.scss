@@ -4,6 +4,11 @@
     &__item {
         @include font(16px, 52px, 500);
         padding-right: 58px;
+
+        @media all and (max-width: 1000px) {
+            padding-right: 48px;
+        }
+
     }
 
     &__link {

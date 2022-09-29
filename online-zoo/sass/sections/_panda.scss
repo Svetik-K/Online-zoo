@@ -1,7 +1,13 @@
 .panda {
     width: 100%;
-    height: 387px;
+    height: 390px;
     background-image: url(../assets/images/panda_bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
+
+    @media all and (max-width: 1000px) {
+        background-image: url(../assets/images/bg_donate_1000.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 }

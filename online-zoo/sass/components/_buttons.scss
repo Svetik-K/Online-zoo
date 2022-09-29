@@ -21,6 +21,10 @@
         color: $color-white;
         border-radius: 25px;
         margin-right: 99px;
+
+        @media all and (max-width: 1000px) {
+            margin-right: 107px;
+        }
     }
 
     &_choose {
@@ -65,12 +69,6 @@
     }
 }
 
-@media all and (max-width: 1000px) {
-    .button_watch {
-        margin-right: 107px;
-    }
-}
-
 .button_left {
     width: 62px;
     height: 62px;
@@ -93,6 +91,16 @@
 
     &:active {
         background-color: $color-green;
+    }
+
+    @media all and (max-width: 1290px) {
+        top: 480px;
+        left: 323px;
+    }
+
+    @media all and (max-width: 1200px) {
+        top: 412px;
+        left: 323px;
     }
 }
 
@@ -120,28 +128,13 @@
         background-color: $color-green;
     }
 
-}
-
-@media all and (max-width: 1290px) {
-    .button_left {
-        top: 480px;
-        left: 323px;
-    }
-
-    .button_right {
+    @media all and (max-width: 1290px) {
         top: 480px;
         right: 323px;
     }
-}
 
-@media all and (max-width: 1200px) {
-    .button_left {
-        top: 410px;
-        left: 323px;
-    }
-
-    .button_right {
-        top: 410px;
+    @media all and (max-width: 1200px) {
+        top: 412px;
         right: 323px;
     }
 }

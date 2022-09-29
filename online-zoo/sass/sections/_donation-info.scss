@@ -2,16 +2,28 @@
     padding: 40px 0 180px;
     background: $color-orange-border;
 
+    @media all and (max-width: 1200px) {
+        padding: 40px 0 30px;
+    }
+
     &__title {
         @include font(36px, 47px, 400);
         color: $color-white;
         margin-bottom: 8.5px;
+
+        @media all and (max-width: 1200px) {
+            margin-bottom: 30px;
+        }
     }
 
     &__text {
         @include font(16px, 22px, 400);
         color: $color-white;
         margin-bottom: 47px;
+
+        @media all and (max-width: 1200px) {
+            margin-bottom: 46px;
+        }
 
         span {
             @include font(16px, 22px, 500);   
@@ -21,7 +33,7 @@
     &__subtitle {
         @include font(36px, 47px, 400);
         color: $color-border-link;
-        margin-bottom: 60px;
+        margin-bottom: 40px;
     }
 }
 
@@ -31,11 +43,22 @@
     background-color: rgba(255, 255, 255, 0.52);
     border-radius: 20px;
 
+    @media all and (max-width: 1200px) {
+        padding: 20px 47px 46px;
+    }
+
     &__title {
         @include font(48px, 58px, 400);
         color: $color-border-link;
         padding-left: 250px;
         margin-bottom: 20px;
+
+        @media all and (max-width: 1200px) {
+            text-align: center;
+            padding-left: 0;
+            padding-right: 15px;
+            margin-bottom: 10px;
+        }
     }
 
     &__text {
@@ -49,10 +72,18 @@
         color: $color-black;
         padding-left: 4px;
         margin-bottom: 17px;
+
+        @media all and (max-width: 1200px) {
+            padding-left: 18px;
+        }
     }
 
     &__scale {
         margin-bottom: 13px;
+
+        @media all and (max-width: 1200px) {
+            margin-bottom: 12px;
+        }
     }
 
     &__prices {
@@ -61,12 +92,25 @@
         color: $color-black-blue;
         margin-bottom: 49px;
 
+        @media all and (max-width: 1200px) {
+            padding: 0 17px;
+        }
+
         span {
 
             &:nth-child(1),
             &:nth-child(2),
             &:nth-child(3) {
                 margin-right: 55px;
+
+                @media all and (max-width: 1200px) {
+                    &:first-child {
+                        display: none;
+                    }
+                    &:nth-child(3) {
+                        margin-right: 54px;
+                    }
+                }
             }
 
             &:nth-child(4),
@@ -91,6 +135,10 @@
     display: flex;
     padding-left: 215px;
     margin-bottom: 48px;
+
+    @media all and (max-width: 1200px) {
+        padding-left: 149px;
+    }
 
     &__number {
         width: 159px;
@@ -130,15 +178,25 @@
     background-color: #404950;
     z-index: 2;
 
+    @media all and (max-width: 1200px) {
+        width: 95.7%;
+        margin: 0 auto;
+        padding: 8px 0 9px;
+    }
+
     &::after {
         content: '';
         position: absolute;
         top: 12px;
         left: 26px;
-        width: 920px;
+        width: calc(100% - 56px);
         height: 2px;
         background-color: #72828E;
         z-index: -1;
+
+        @media all and (max-width: 1200px) {
+            width: calc(100% - 40px);
+        }
     }
 
     &__item {
@@ -154,6 +212,12 @@
             background: url(../assets/icons/yellow_dot.svg), url(../assets/icons/roller_icon.svg);
             background-position: center;
             background-repeat: no-repeat;
+        }
+
+        @media all and (max-width: 1200px) {
+            &:first-child {
+                display: none;
+            }
         }
     }   
 }
@@ -176,6 +240,10 @@
         outline: none;
         box-sizing: border-box;
         margin-bottom: 24px;
+
+        @media all and (max-width: 1200px) {
+            margin-bottom: 25px;
+        }
 
         &:focus {
             outline: none;

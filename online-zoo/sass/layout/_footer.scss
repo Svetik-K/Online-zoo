@@ -128,12 +128,20 @@
     display: flex;
 
     &:first-child {
-        padding-left: 62px; 
+        padding-left: 62px;
+        
+        @media all and (max-width: 1000px) {
+            padding-left: 42px;
+        }
     }
 
     &__item {
         @include font(16px, 22px, 500);
         padding-left: 58px;
+
+        @media all and (max-width: 1000px) {
+            padding-left: 48px;
+        }
     }
 
     &__link {
@@ -165,4 +173,8 @@
 
 .designed-by {
     margin-bottom: 10px;
+}
+
+#about-link {
+    padding-left: 72px;
 }

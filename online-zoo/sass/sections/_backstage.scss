@@ -4,9 +4,18 @@
     background-position: right top 12px;
     background-repeat: no-repeat;
 
+    @media all and (max-width: 1500px) {
+        background-image: none;
+    }
+
     &__image {
         width: 52.5%;
         height: 403px;
+
+        @media all and (max-width: 1200px) {
+            max-width: 48.2%;
+            height: 408px;
+        }
 
         img {
             width: 100%;
@@ -19,6 +28,10 @@
         width: 40.1%;
         text-align: left;
         color: $color-black-blue;
+
+        @media all and (max-width: 1200px) {
+            width: 48.3%;
+        }
     }
 
     &__title {
@@ -38,25 +51,5 @@
 
     &__goal {
         @include font(16px, 22px, 400);
-    }
-}
-
-@media all and (max-width: 1500px) {
-    .backstage {
-        background-image: none;
-    }
-}
-
-@media all and (max-width: 1200px) {
-    .backstage {
-        
-        &__image {
-            width: 47.8%;
-            height: 408px;
-        }
-    
-        &__text {
-            width: 48.3%;
-        }
     }
 }
