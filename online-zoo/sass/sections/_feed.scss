@@ -6,8 +6,11 @@
     color: $color-black-blue;
 
     @media all and (max-width: 1200px) {
-        padding-top: 30px;
-        padding-bottom: 50px;
+        padding: 30px 0 50px;
+    }
+
+    @media all and (max-width: 760px) {
+        padding: 20px 0;
     }
 
     &__title {
@@ -18,7 +21,12 @@
         padding-left: 3px;
 
         @media all and (max-width: 1200px) {
-            margin-bottom: 23px;
+            margin-bottom: 21px;
+        }
+
+        @media all and (max-width: 760px) {
+            @include font(42px, 50px, 400);
+            margin-bottom: 19px;
         }
     }
 
@@ -29,7 +37,12 @@
 
         @media all and (max-width: 1200px) {
             padding-left: 49px;
-            margin-bottom: 19px;
+            margin-bottom: 21px;
+        }
+
+        @media all and (max-width: 760px) {
+            @include font(22px, 26.4px, 400);
+            padding-left: 0;
         }
     }
 
@@ -41,7 +54,12 @@
         @media all and (max-width: 1200px) {
             padding-left: 49px;
             padding-right: 80px;
-            margin-bottom: 8px;
+            margin-bottom: 9px;
+        }
+
+        @media all and (max-width: 760px) {
+            @include font(16px, 20.8px, 500);
+            padding: 0;
         }
     }
 
@@ -55,6 +73,12 @@
             padding-right: 48px;
             margin-bottom: 40px;
         }
+
+        @media all and (max-width: 760px) {
+            @include font(16px, 20.8px, 400);
+            padding: 0;
+            margin-bottom: 31px;
+        }
         
         a {
             color: $color-black-blue;
@@ -67,6 +91,10 @@
         @include font(36px, 47px, 400);
         text-align: center;
         margin-bottom: 40px;
+
+        @media all and (max-width: 760px) {
+            margin-bottom: 20px;
+        }
     }
 }
 
@@ -80,6 +108,19 @@
         margin: 0 auto 73px;
     }
 
+    @media all and (max-width: 960px) {
+        width: 588px;
+    }
+
+    @media all and (max-width: 760px) {
+        margin: 0 auto 42px;
+    }
+
+    @media all and (max-width: 640px) {
+        margin: 0 0 42px;
+    }
+
+
     &__box {
         position: relative;
         width: 168px;
@@ -90,6 +131,14 @@
             position: absolute;
             top: 60px;
             right: -100px;
+
+            @media all and (max-width: 960px) {
+                content: url(../assets/icons/arrow_green.svg);
+                position: absolute;
+                top: -16px;
+                right: -57px;
+                z-index: 10;
+            }
         }
 
         &:last-child::after {

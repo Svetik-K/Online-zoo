@@ -11,8 +11,11 @@
 <body>
     <header class="header" id="header">
         <div class="wrapper header__wrapper">
-            <div class="logo">
+            <div class="logo" id="header-logo">
                 <h1 class="logo__text"><a href="./index.html">PetStory online</a></h1>
+            </div>
+            <div class="mobile-logo">
+                <h1 class="mobile-logo__text"><a href="./index.html">PetStory online</a></h1>
             </div>
             <nav class="navigation">
                 <ul class="nav">
@@ -25,6 +28,11 @@
             </nav>
             <div class="designed">
                 <a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online?node-id=0%3A1" target="_blank">Designed by ©</a>
+            </div>
+            <div class="burger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
             </div>
         </div>
     </header>
@@ -275,8 +283,19 @@
     <footer class="footer" id="footer">
         <div class="subscription">
             <div class="wrapper subscription__wrapper">
-                <div class="logo">
-                    <h5 class="logo__text"><a href="#header">PetStory online</a></h5>
+                <div class="logo-block">
+                    <div class="logo">
+                        <h5 class="logo__text"><a href="#header">PetStory online</a></h5>
+                    </div>
+                    <button class="button button_donate-mobile">donate for volunteers</button>
+                </div> 
+                <div class="mobile-links">
+                    <ul class="mobile-links__list">
+                        <li class="list__item"><a href="https://www.facebook.com/" class="list__link" target="_blank"><span class="ico ico_fb"></span></a></li>
+                        <li class="list__item"><a href="https://twitter.com/" class="list__link" target="_blank"><span class="ico ico_twit"></span></a></li>
+                        <li class="list__item"><a href="https://www.instagram.com/" class="list__link" target="_blank"><span class="ico ico_insta"></span></a></li>
+                        <li class="list__item"><a href="https://www.youtube.com/" class="list__link" target="_blank"><span class="ico ico_youtb" id="youtb"></span></a></li>
+                    </ul>
                 </div>
                 <form class="subscription__form">
                     <h4 class="form__title">Subscribe to our news</h4>

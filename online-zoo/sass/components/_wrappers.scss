@@ -1,15 +1,20 @@
 .wrapper {
     max-width: 1160px;
     margin: 0 auto;
-
-    @media all and (max-width: 1200px) {
-        max-width: 940px;
-        margin: 0 auto;
-    }
 }
 
 .header__wrapper {
     display: flex;
+
+    @media all and (max-width: 1200px) {
+        padding: 0 30px;
+    }
+
+    @media all and (max-width: 760px) {
+        padding: 0 20px;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 .watch__wrapper {
@@ -19,7 +24,11 @@
     padding: 85px 0 100px;
 
     @media all and (max-width: 1000px) {
-        padding: 43px 0 47px;
+        padding: 43px 30px 47px;
+    }
+
+    @media all and (max-width: 760px) {
+        padding: 48px 20px 40px;
     }
 }
 
@@ -30,7 +39,11 @@
 
     @media all and (max-width: 1200px) {
         align-items: center;
-        padding: 100px 0;
+        padding: 100px 30px;
+    }
+
+    @media all and (max-width: 760px) {
+        padding: 60px 20px;
     }
 }
 
@@ -41,8 +54,16 @@
     margin: 0 auto;
 
     @media all and (max-width: 1200px) {
-        max-width: 940px;
-        padding: 42px 0 140px;
+        max-width: 1160px;
+        padding: 42px 30px 140px;
+    }
+
+    @media all and (max-width: 999px) {
+        padding: 42px 20px 140px;
+    }
+
+    @media all and (max-width: 760px) {
+        padding: 20px 20px 101px;
     }
 }
 
@@ -52,7 +73,12 @@
     padding: 41px 0 59px;
 
     @media all and (max-width: 1200px) {
+        max-width: 940px;
         padding: 30px 0 50px;
+    }
+
+    @media all and (max-width: 760px) {
+        padding: 10px 20px 60px;
     }
 }
 
@@ -61,16 +87,28 @@
     display: flex;
     justify-content: space-between;
 
-    @media all and (max-width: 1000px) {
-        padding-right: 32px;
+    @media all and (max-width: 1200px) {
+        padding: 41px 62px 34px 30px;
     }
+
+    @media all and (max-width: 760px) {
+        padding: 12px 20px 0;
+    }
+
 }
 
 .social__wrapper {
     padding: 45px 0 50px;
     display: flex;
-    justify-content: space-between;
     align-items: flex-end;
+
+    @media all and (max-width: 1200px) {
+        padding: 45px 30px 50px;
+    }
+
+    @media all and (max-width: 760px) {
+        padding: 40px 20px 12px;
+    }
 }
 
 

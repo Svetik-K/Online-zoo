@@ -3,7 +3,16 @@
     background-color: $color-black;
 }
 
+.logo-block {
+    display: flex;
+    flex-direction: column;
+}
+
 .logo {
+
+    @media all and (max-width: 760px) {
+        margin-bottom: 33px;
+    }
 
     a {
         @include font(19px, 23px, 400);
@@ -21,6 +30,12 @@
         margin-bottom: 13px;
     }
 
+}
+
+form {
+    @media all and (max-width: 760px) {
+        display: none;
+    }
 }
 
 .email-input {
@@ -44,17 +59,37 @@
         border: 1px solid $color-green;
         color: $color-green;
     }
+
+    &::placeholder {
+        @include font(16px, 22px, 400);
+        color: $color-placeholder;
+    }
 }
 
-::placeholder {
-    @include font(16px, 22px, 400);
-    color: $color-placeholder;
+.mobile-links {
+    display: none;
+
+    @media all and (max-width: 760px) {
+        display: flex;
+    }
+
+    span {
+        margin: 0 0 17px;
+    }
+}
+
+#youtb {
+    margin: 0;
 }
 
 .links-list {
     list-style-type: none;
     display: flex;
     flex-direction: column;
+
+    @media all and (max-width: 760px) {
+        display: none;
+    }
 
     &__item {
         display: block;
@@ -83,64 +118,80 @@
         &:active {
             color: $color-green;
         }
+    }
+}
 
-        .ico {
-            display: inline-block;
-            width: 26px;
-            height: 26px;
-            border-radius: 50%;
-            background-color: rgba(196, 196, 196, 0.5);
-            margin-right: 13px;
-            transition: 0.5s;
+.ico {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: rgba(196, 196, 196, 0.5);
+    margin-right: 13px;
+    transition: 0.5s;
 
-            &:hover {
-                background-color: $color-green;
-            }
+    &:hover {
+        background-color: $color-green;
+    }
 
-            &_fb {
-                background-image: url(../assets/icons/fb.svg);
-                background-position: center;
-                background-repeat: no-repeat;
-            }
+    &_fb {
+        background-image: url(../assets/icons/fb.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 
-            &_twit {
-                background-image: url(../assets/icons/twit.svg);
-                background-position: center;
-                background-repeat: no-repeat;
-            }
+    &_twit {
+        background-image: url(../assets/icons/twit.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 
-            &_insta {
-                background-image: url(../assets/icons/instagr.svg);
-                background-position: center;
-                background-repeat: no-repeat;
-            }
+    &_insta {
+        background-image: url(../assets/icons/instagr.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 
-            &_youtb {
-                background-image: url(../assets/icons/youtb.svg);
-                background-position: center;
-                background-repeat: no-repeat;
-            }
-        }
+    &_youtb {
+        background-image: url(../assets/icons/youtb.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+.social__menu {
+    margin-left: 24.8%;
+
+    @media all and (max-width: 1200px) {
+        margin-left: 19.2%;
+    }
+
+    @media all and (max-width: 960px) {
+        margin-left: 6%;
+    }
+
+    @media all and (max-width: 760px) {
+        margin-left: 0;
     }
 }
 
 .menu {
     display: flex;
 
-    &:first-child {
-        padding-left: 62px;
-        
-        @media all and (max-width: 1000px) {
-            padding-left: 42px;
-        }
-    }
-
     &__item {
         @include font(16px, 22px, 500);
-        padding-left: 58px;
+        padding-right: 58px;
 
         @media all and (max-width: 1000px) {
-            padding-left: 48px;
+            padding-right: 48px;
+        }
+
+        @media all and (max-width: 960px) {
+            padding-right: 20px;
+        }
+
+        @media all and (max-width: 760px) {
+            padding-right: 37px;
         }
     }
 
@@ -160,6 +211,10 @@
             color: $color-orange;
         }
     }
+}
+
+.social__copyright {
+    margin: 0 0 0 auto;
 }
 
 .designed-by {

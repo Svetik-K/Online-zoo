@@ -8,6 +8,12 @@
         background-image: none;
     }
 
+    @media all and (max-width: 960px) {
+        background-image: url(../assets/images/flower_tablet.png);
+        background-position: right top -5px;
+        background-repeat: no-repeat;
+    }
+
     &__image {
         width: 52.5%;
         height: 403px;
@@ -15,6 +21,10 @@
         @media all and (max-width: 1200px) {
             max-width: 48.2%;
             height: 408px;
+        }
+
+        @media all and (max-width: 960px) {
+            display: none;
         }
 
         img {
@@ -32,11 +42,20 @@
         @media all and (max-width: 1200px) {
             width: 48.3%;
         }
+
+        @media all and (max-width: 960px) {
+            width: 82.5%;
+        }
     }
 
     &__title {
         @include font(48px, 58px, 400);
         margin-bottom: 20px;
+
+        @media all and (max-width: 760px) {
+            padding-left: 4px;
+            margin-bottom: 21px;
+        }
     }
 
     &__founded {
@@ -47,6 +66,15 @@
         @include font(24px, 29px, 400);
         margin-top: 54px;
         margin-bottom: 33px;
+
+        @media all and (max-width: 960px) {
+            margin: 30px 0 20px;
+        }
+
+        @media all and (max-width: 760px) {
+            padding-left: 4px;
+            margin: 30px 0 19px;
+        }
     }
 
     &__goal {

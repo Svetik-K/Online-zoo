@@ -7,6 +7,11 @@
         background: url(../assets/images/palm_1000.png) left bottom, url(../assets/images/strelitzia_1000.png) right bottom;
         background-repeat: no-repeat;
     }
+
+    @media all and (max-width: 760px) {
+        background: url(../assets/images/palm_foto_mini.png) left bottom, url(../assets/images/strelitzia_mini.png) right bottom;
+        background-repeat: no-repeat;
+    }
 }
 
 .animal-cards {
@@ -22,7 +27,14 @@
     }
 
     @media all and (max-width: 1200px) {
+        justify-content: center;
+        column-gap: 28.5px;
         margin: 0 auto 80px;
+    }
+
+    @media all and (max-width: 760px) {
+        column-gap: 30px;
+        margin: 0 auto 60px;
     }
 }
 
@@ -41,6 +53,11 @@
         height: 355px;
     }
 
+    @media all and (max-width: 760px) {
+        width: 285px;
+        height: 332px;
+    }
+
     &:nth-child(1),
     &:nth-child(3),
     &:nth-child(4) {
@@ -49,6 +66,12 @@
             background: url(../assets/icons/banana-bamboo_icon.svg), $color-white;
             background-position: right 10px bottom 14px;
             background-repeat: no-repeat;
+
+            @media all and (max-width: 760px) {
+                background: url(../assets/icons/banana-bamboo_mini.svg), $color-white;
+                background-position: right 9px bottom 8px;
+                background-repeat: no-repeat;
+            }
         }
     }
 
@@ -59,8 +82,14 @@
 
         .animal-card__content {
             background: url(../assets/icons/meet-fish_icon.svg), $color-white;
-            background-position: right 9px bottom 14px;
+            background-position: right 5px bottom 14px;
             background-repeat: no-repeat;
+
+            @media all and (max-width: 760px) {
+                background: url(../assets/icons/meet-fish_mini.svg), $color-white;
+                background-position: right 5px bottom 8px;
+                background-repeat: no-repeat;
+            }
         }
     }
 
@@ -94,6 +123,13 @@
         }
     }
 
+    @media all and (max-width: 980px) {
+        &:nth-child(5),
+        &:nth-child(6) {
+            display: none;
+        }
+    }
+
 
     &__content {
         width: calc(100% - 2px);
@@ -113,6 +149,10 @@
         @media all and (max-width: 1200px) {
             height: 294px;
             margin-bottom: 8px;
+        }
+
+        @media all and (max-width: 760px) {
+            height: 285px;
         }
 
         img {
@@ -141,12 +181,22 @@
         color: $color-black;
         text-transform: uppercase;
         padding-left: 16px;
+
+        @media all and (max-width: 760px) {
+            @include font(12.5px, 14px, 500);
+            padding-left: 10.5px;
+        }
     }
 
     &__description {
         @include font(15px, 18px, 300);
         color: $color-black;
-        padding-left: 16px;   
+        padding-left: 16px; 
+        
+        @media all and (max-width: 760px) {
+            @include font(11.7px, 14px, 300);
+            padding-left: 10.5px;
+        }
     }
 }
 

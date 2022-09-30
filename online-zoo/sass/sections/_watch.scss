@@ -24,6 +24,13 @@
             margin-bottom: 44px;
         }
 
+        @media all and (max-width: 760px) {
+            width: 250px;
+            @include font(54.3px, 40.7px, 700);
+            margin: 0;
+        }
+
+
         &::before {
             content: '';
             display: block;
@@ -41,6 +48,13 @@
                 left: -58px;
                 width: 367px;
                 height: 367px;
+            }
+
+            @media all and (max-width: 760px) {
+                width: 237.6px;
+                height: 237.6px;
+                top: -38px;
+                left: -39px;
             }
         }
     }
