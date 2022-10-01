@@ -17,12 +17,22 @@
         background-repeat: no-repeat;
     }
 
+    @media all and (max-width: 540px) {
+        background: url(../assets/images/leav_320.png), $color-white;
+        background-position: right bottom -30px;
+        background-repeat: no-repeat;
+    }
+
     @media all and (max-width: 960px) {
         padding: 60px 30px 80px;
     }
 
     @media all and (max-width: 760px) {
         padding: 60px 20px 80px;
+    }
+
+    @media all and (max-width: 540px) {
+        padding: 30px 10px 60px;
     }
 
     &__title {
@@ -37,6 +47,11 @@
 
         @media all and (max-width: 760px) {
             margin-bottom: 13px;
+        }
+
+        @media all and (max-width: 540px) {
+            @include font(24px, 29px, 400);
+            margin-bottom: 3px;
         }
     }
 
@@ -60,6 +75,10 @@
 
         @media all and (max-width: 760px) {
             margin-bottom: 23px;
+        }
+
+        @media all and (max-width: 320px) {
+            margin-bottom: 13px;
         }
     }
 
@@ -138,7 +157,11 @@
         }
 
         @media all and (max-width: 960px) {
-            padding: 12px 12px 6px;
+            padding: 14px 11px 6px;
+        }
+
+        @media all and (max-width: 320px) {
+            padding: 10px 12px 6px;
         }
     }
 
@@ -148,6 +171,14 @@
 
         img {
             padding-right: 11px;
+
+            @media all and (max-width: 960px) {
+                padding-right: 9px;
+            }
+
+            @media all and (max-width: 320px) {
+                padding-right: 5px;
+            }
         }
     }
 
@@ -168,6 +199,7 @@
 
         @media all and (max-width: 960px) {
             max-height: 36px;
+            padding-left: 5px;
         }
     }
 }

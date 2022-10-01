@@ -22,6 +22,32 @@
     }
 }
 
+#footer-logo {
+    @media all and (max-width: 540px) {
+        display: none;
+    }
+}
+
+.mobile-footer-logo {
+    width: 128px;
+    display: none;
+    @include font(19px, 23px, 400);
+    text-align: center;
+    background-image: url(../assets/icons/bamboo.svg);
+    background-position: right 45px bottom 4px;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+
+    a {
+        color: $color-white;
+        text-decoration: none;
+    }
+
+    @media all and (max-width: 540px) {
+        display: block;
+    }
+}
+
 .form {
 
     &__title {
@@ -75,6 +101,19 @@ form {
 
     span {
         margin: 0 0 17px;
+
+        @media all and (max-width: 540px) {
+            margin: 0 0 27px;
+        }
+    }
+
+    &__list {
+
+        @media all and (max-width: 540px) {
+            display: flex;
+            flex-direction: row;
+            column-gap: 30px;
+        }
     }
 }
 
@@ -193,6 +232,14 @@ form {
         @media all and (max-width: 760px) {
             padding-right: 37px;
         }
+
+        @media all and (max-width: 620px) {
+            padding-right: 20px;
+        }
+
+        @media all and (max-width: 540px) {
+            padding-right: 30px;
+        }
     }
 
     &__link {
@@ -213,18 +260,38 @@ form {
     }
 }
 
+#contact {
+
+    @media all and (max-width: 540px) {
+        padding-right: 0;
+    }
+}
+
 .social__copyright {
     margin: 0 0 0 auto;
+
+    @media all and (max-width: 540px) {
+        margin: 0 0 30px;
+        align-self: flex-end;
+    }
 }
 
 .designed-by {
     margin-bottom: 10px;
+
+    @media all and (max-width: 540px) {
+        margin-bottom: 13px;
+    }
     
     a {
         @include font(16px, 21px, 100);
         color: $color-white;
         opacity: 0.7;
-        text-decoration: none; 
+        text-decoration: none;
+        
+        @media all and (max-width: 540px) {
+            @include font(15px, 18px, 100);
+        }
         
         &:hover {
             color: $color-green;
@@ -241,7 +308,11 @@ form {
         @include font(16px, 21px, 100);
         color: $color-white;
         opacity: 0.7;
-        text-decoration: none; 
+        text-decoration: none;
+        
+        @media all and (max-width: 540px) {
+            @include font(15px, 18px, 100);
+        }
         
         &:hover {
             color: $color-green;
@@ -253,6 +324,6 @@ form {
     }
 }
 
-#about-link {
-    padding-left: 72px;
-}
+// #about-link {
+//     padding-left: 72px;
+// }

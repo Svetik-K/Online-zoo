@@ -13,6 +13,10 @@
         padding: 20px 0;
     }
 
+    @media all and (max-width: 620px) {
+        padding: 20px 10px;
+    }
+
     &__title {
         @include font(48px, 58px, 400);
         color: $color-orange;
@@ -27,6 +31,14 @@
         @media all and (max-width: 760px) {
             @include font(42px, 50px, 400);
             margin-bottom: 19px;
+        }
+
+        @media all and (max-width: 540px) {
+            @include font(24px, 29px, 400);
+        }
+
+        @media all and (max-width: 320px) {
+            margin-bottom: 10px;
         }
     }
 
@@ -44,6 +56,11 @@
             @include font(22px, 26.4px, 400);
             padding-left: 0;
         }
+
+        @media all and (max-width: 540px) {
+            @include font(18px, 21.6px, 400);
+            text-align: center;
+        }
     }
 
     &__covid {
@@ -60,6 +77,10 @@
         @media all and (max-width: 760px) {
             @include font(16px, 20.8px, 500);
             padding: 0;
+        }
+
+        @media all and (max-width: 540px) {
+            display: none;
         }
     }
 
@@ -79,6 +100,10 @@
             padding: 0;
             margin-bottom: 31px;
         }
+
+        @media all and (max-width: 540px) {
+            display: none;
+        }
         
         a {
             color: $color-black-blue;
@@ -94,6 +119,10 @@
 
         @media all and (max-width: 760px) {
             margin-bottom: 20px;
+        }
+
+        @media all and (max-width: 540px) {
+            @include font(24px, 29px, 400);
         }
     }
 }
@@ -120,6 +149,14 @@
         margin: 0 0 42px;
     }
 
+    @media all and (max-width: 620px) {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+        width: 100%;
+        margin: 0 0 30px;
+    }
+
 
     &__box {
         position: relative;
@@ -139,11 +176,37 @@
                 right: -57px;
                 z-index: 10;
             }
+
+            @media all and (max-width: 620px) {
+                transform: rotate(85deg);
+                top: 190px;
+                right: -60px;
+            }
         }
 
         &:last-child::after {
             display: none;
         }
+
+        &:nth-child(2)::after {
+            @media all and (max-width: 620px) {
+                top: 198px;
+            }
+        }
+
+        &:first-child {
+            @media all and (max-width: 620px) {
+                height: 222px;
+            }
+        }
+
+        &:nth-child(2),
+        &:nth-child(3) {
+            @media all and (max-width: 620px) {
+                height: 231px;
+            }
+        }
+
     }
 }
 
@@ -159,6 +222,10 @@
         justify-content: center;
         align-items: center;
         border: 1px solid $color-orange;
+
+        @media all and (max-width: 620px) {
+            margin-bottom: 10px;
+        }
     }
 
     &__text {

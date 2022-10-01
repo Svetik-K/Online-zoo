@@ -12,6 +12,11 @@
         background: url(../assets/images/palm_foto_mini.png) left bottom, url(../assets/images/strelitzia_mini.png) right bottom;
         background-repeat: no-repeat;
     }
+
+    @media all and (max-width: 540px) {
+        background: url(../assets/images/palm_320.png) left bottom, url(../assets/images/strelitzia_320.png) right bottom -4px;
+        background-repeat: no-repeat;
+    }
 }
 
 .animal-cards {
@@ -28,13 +33,26 @@
 
     @media all and (max-width: 1200px) {
         justify-content: center;
-        column-gap: 28.5px;
-        margin: 0 auto 80px;
+        column-gap: 29px;
     }
 
     @media all and (max-width: 760px) {
         column-gap: 30px;
         margin: 0 auto 60px;
+    }
+
+    @media all and (max-width: 639px) {
+        column-gap: 20px;
+    }
+
+    @media all and (max-width: 620px) {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+
+    @media all and (max-width: 540px) {
+        margin: 0 auto 20px;
     }
 }
 
@@ -67,6 +85,12 @@
             background-position: right 10px bottom 14px;
             background-repeat: no-repeat;
 
+            @media all and (max-width: 1000px) {
+                background: url(../assets/icons/banana-bamboo_icon.svg), $color-white;
+                background-position: right 14px bottom 14px;
+                background-repeat: no-repeat;
+            }
+
             @media all and (max-width: 760px) {
                 background: url(../assets/icons/banana-bamboo_mini.svg), $color-white;
                 background-position: right 9px bottom 8px;
@@ -84,6 +108,12 @@
             background: url(../assets/icons/meet-fish_icon.svg), $color-white;
             background-position: right 5px bottom 14px;
             background-repeat: no-repeat;
+
+            @media all and (max-width: 1000px) {
+                background: url(../assets/icons/meet-fish_icon.svg), $color-white;
+                background-position: right 8px bottom 14px;
+                background-repeat: no-repeat;
+            }
 
             @media all and (max-width: 760px) {
                 background: url(../assets/icons/meet-fish_mini.svg), $color-white;
@@ -147,8 +177,8 @@
         cursor: pointer;
 
         @media all and (max-width: 1200px) {
-            height: 294px;
-            margin-bottom: 8px;
+            height: 295px;
+            margin-bottom: 6.5px;
         }
 
         @media all and (max-width: 760px) {
@@ -182,6 +212,11 @@
         text-transform: uppercase;
         padding-left: 16px;
 
+        @media all and (max-width: 1200px) {
+            @include font(16px, 20px, 500);
+            padding-left: 15px;
+        }
+
         @media all and (max-width: 760px) {
             @include font(12.5px, 14px, 500);
             padding-left: 10.5px;
@@ -191,7 +226,11 @@
     &__description {
         @include font(15px, 18px, 300);
         color: $color-black;
-        padding-left: 16px; 
+        padding-left: 16px;
+        
+        @media all and (max-width: 1200px) {
+            padding-left: 15px;
+        }
         
         @media all and (max-width: 760px) {
             @include font(11.7px, 14px, 300);

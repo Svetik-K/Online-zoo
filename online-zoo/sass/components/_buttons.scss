@@ -30,6 +30,22 @@
             align-self: flex-start;
             margin-top: -7px;
         }
+
+        @media all and (max-width: 540px) {
+            display: none;
+        }
+    }
+
+    &_watch-mobile {
+        @include font(16px, 22px, 500);
+        color: $color-white;
+        border-radius: 25px;
+        display: none;
+        margin: 0 auto 30px;
+
+        @media all and (max-width: 540px) {
+            display: block;
+        }
     }
 
     &_choose {
@@ -80,6 +96,11 @@
         @media all and (max-width: 760px) {
             display: none;
         }
+
+        @media all and (max-width: 540px) {
+            display: block;
+            margin: 0 auto;
+        }
     }
 
     &_donate-mobile {
@@ -95,6 +116,10 @@
 
         @media all and (max-width: 760px) {
             display: block;
+        }
+
+        @media all and (max-width: 540px) {
+            display: none;
         }
     }
 
@@ -141,12 +166,20 @@
         left: 30.4%;
     }
 
+    @media all and (max-width: 1000px) {
+        left: 35.2%;
+    }
+
     @media all and (max-width: 760px) {
         top: 365px;
     }
 
     @media all and (max-width: 640px) {
         left: 243px;
+    }
+
+    @media all and (max-width: 620px) {
+        display: none;
     }
 }
 
@@ -184,12 +217,20 @@
         right: 30.4%;
     }
 
+    @media all and (max-width: 1000px) {
+        right: 35.2%;
+    }
+
     @media all and (max-width: 760px) {
         top: 365px;
     }
 
     @media all and (max-width: 640px) {
         right: 243px;
+    }
+
+    @media all and (max-width: 620px) {
+        display: none;
     }
 }
 
