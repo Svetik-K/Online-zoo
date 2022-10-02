@@ -1,10 +1,6 @@
 .donation-info {
-    padding: 40px 0 180px;
+    width: 100%;
     background: $color-orange-border;
-
-    @media all and (max-width: 1200px) {
-        padding: 40px 0 30px;
-    }
 
     &__title {
         @include font(36px, 47px, 400);
@@ -13,6 +9,11 @@
 
         @media all and (max-width: 1200px) {
             margin-bottom: 30px;
+        }
+
+        @media all and (max-width: 760px) {
+            @include font(24px, 28.8px, 400);
+            margin-bottom: 20px;
         }
     }
 
@@ -25,16 +26,33 @@
             margin-bottom: 46px;
         }
 
-        span {
-            @include font(16px, 22px, 500);   
+        @media all and (max-width: 760px) {
+            margin-bottom: 30px;
         }
+
     }
 
     &__subtitle {
         @include font(36px, 47px, 400);
         color: $color-border-link;
-        margin-bottom: 40px;
+        margin-bottom: 60px;
+
+        @media all and (max-width: 1000px) {
+            margin-bottom: 40px;
+        }
+
+        @media all and (max-width: 760px) {
+            margin-bottom: 30px;
+        }
+
+        @media all and (max-width: 560px) {
+            @include font(24px, 28.8px, 400);
+        }
     }
+}
+
+.text-bold {
+    @include font(16px, 22px, 500);   
 }
 
 .pick-friend {
@@ -45,6 +63,18 @@
 
     @media all and (max-width: 1200px) {
         padding: 20px 47px 46px;
+    }
+
+    @media all and (max-width: 960px) {
+        padding: 20px 10px 46px;
+    }
+
+    @media all and (max-width: 760px) {
+        padding: 30px 0 31px;
+    }
+
+    @media all and (max-width: 560px) {
+        padding: 20px 0 31px;
     }
 
     &__title {
@@ -59,12 +89,38 @@
             padding-right: 15px;
             margin-bottom: 10px;
         }
+
+        @media all and (max-width: 760px) {
+            padding-right: 0;
+            margin-bottom: 20px;
+        }
+
+        @media all and (max-width: 560px) {
+            @include font(24px, 28.8px, 400);
+        }
+
+        @media all and (max-width: 390px) {
+            margin-bottom: 10px;
+        }
     }
 
     &__text {
         @include font(24px, 29px, 400);
         color: $color-black-blue;
         margin-bottom: 60px;
+
+        @media all and (max-width: 960px) {
+            text-align: center;
+        }
+
+        @media all and (max-width: 760px) {      
+            margin-bottom: 45px;
+        }
+
+        @media all and (max-width: 560px) {
+            @include font(16px, 22px, 400);
+            margin-bottom: 10px;
+        }
     }
 
     &__amount {
@@ -75,6 +131,11 @@
 
         @media all and (max-width: 1200px) {
             padding-left: 18px;
+        }
+
+        @media all and (max-width: 760px) {
+            padding-left: 10px;
+            margin-bottom: 8px;
         }
     }
 
@@ -96,19 +157,41 @@
             padding: 0 17px;
         }
 
+        @media all and (max-width: 999px) {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @media all and (max-width: 760px) {  
+            padding: 0 20px 0 15px;
+        }
+
+        @media all and (max-width: 560px) {  
+            @include font(13px, 18px, 500);
+            margin-bottom: 25px;
+        }
+
         span {
 
             &:nth-child(1),
             &:nth-child(2),
             &:nth-child(3) {
-                margin-right: 55px;
+                margin-right: 5.6%;
 
-                @media all and (max-width: 1200px) {
+                @media all and (max-width: 1060px) {
                     &:first-child {
                         display: none;
                     }
+                    &:nth-child(2),
                     &:nth-child(3) {
-                        margin-right: 54px;
+                        margin-right: 6.9%;
+                    }
+                }
+
+                @media all and (max-width: 999px) {
+                    &:nth-child(2),
+                    &:nth-child(3) {
+                        display: none;
                     }
                 }
             }
@@ -116,11 +199,29 @@
             &:nth-child(4),
             &:nth-child(5),
             &:nth-child(6) {
-                margin-right: 71px;
+                margin-right: 7.2%;
+
+                @media all and (max-width: 1060px) {
+                    &:nth-child(4),
+                    &:nth-child(5),
+                    &:nth-child(6) {
+                        margin-right: 8.7%;
+                    }
+                }
+
+                @media all and (max-width: 999px) {
+                    &:nth-child(6) {
+                        color: $color-border-link;
+                    }
+                }
             }
 
             &:nth-child(7) {
-                margin-right: 88px;
+                margin-right: 9%;
+
+                @media all and (max-width: 1060px) {
+                    margin-right: 10.6%;
+                }
             }
         }
     }
@@ -134,10 +235,27 @@
     height: 246px;
     display: flex;
     padding-left: 215px;
-    margin-bottom: 48px;
+    margin-bottom: 0 0 47px;
 
-    @media all and (max-width: 1200px) {
+    @media all and (max-width: 1000px) {
         padding-left: 149px;
+    }
+
+    @media all and (max-width: 999px) {
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    @media all and (max-width: 640px) {
+        justify-content: flex-start;
+        padding-left: 26px;
+        margin-bottom: 44.5px;
+    }
+
+    @media all and (max-width: 560px) {
+        height: 138px;
+        padding: 0;
+        justify-content: center;
     }
 
     &__number {
@@ -148,23 +266,59 @@
         justify-content: center;
         padding-top: 55px;
 
+        @media all and (max-width: 640px) {
+            padding-top: 62px;
+        }
+
         span {
             @include font(72px, 57.6px, 500);
             color: $color-black;
             margin-bottom: 11px;
+
+            @media all and (max-width: 560px) {
+                @include font(40.6px, 32.5px, 500);
+            }
         }
 
         p {
             @include font(16px, 22.4px, 400);
             color: $color-black-blue;
+
+            @media all and (max-width: 560px) {
+                @include font(9px, 12.6px, 400);
+            }
         }
     }
 
     &__cross {
         @include font(14px, 14px, 400);
         padding: 130px 67px 0 11px;
-        color: $color-black-blue;    
+        color: $color-black-blue;
+
+        @media all and (max-width: 640px) {
+            padding: 135px 66px 0 12px;
+        }
+        
+        @media all and (max-width: 560px) {
+            padding: 73px 36px 0 11px;
+        }
     }
+
+    &__image {
+        width: 284px;
+        height: 256px;
+
+        @media all and (max-width: 560px) {
+            width: 160px;
+            height: 138px;
+        }
+        
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
 }
 
 .radios {
@@ -178,10 +332,20 @@
     background-color: #404950;
     z-index: 2;
 
-    @media all and (max-width: 1200px) {
-        width: 95.7%;
-        margin: 0 auto;
+    @media all and (max-width: 1060px) {
+        width: calc(100% - 35px);
         padding: 8px 0 9px;
+        margin-left: 17px;
+    }
+
+    @media all and (max-width: 760px) {
+        width: 100%;
+        padding: 8px 18px 9px;
+        margin-left: 0;
+    }
+
+    @media all and (max-width: 560px) {
+        padding: 4px 18px 4.5px;
     }
 
     &::after {
@@ -194,8 +358,13 @@
         background-color: #72828E;
         z-index: -1;
 
-        @media all and (max-width: 1200px) {
-            width: calc(100% - 40px);
+        @media all and (max-width: 1060px) {
+            width: calc(100% - 42px);
+        }
+
+        @media all and (max-width: 760px) {
+            width: calc(100% - 80px);
+            left: 40px;
         }
     }
 
@@ -214,9 +383,22 @@
             background-repeat: no-repeat;
         }
 
-        @media all and (max-width: 1200px) {
+        @media all and (max-width: 1060px) {
             &:first-child {
                 display: none;
+            }
+        }
+
+        @media all and (max-width: 999px) {
+            &:nth-child(2),
+            &:nth-child(3) {
+                display: none;
+            }
+
+            &:nth-child(6) {
+                background: url(../assets/icons/yellow_dot.svg), url(../assets/icons/roller_icon.svg);
+                background-position: center;
+                background-repeat: no-repeat;
             }
         }
     }   
@@ -242,7 +424,14 @@
         margin-bottom: 24px;
 
         @media all and (max-width: 1200px) {
-            margin-bottom: 25px;
+            margin-bottom: 27px;
+        }
+
+        @media all and (max-width: 760px) {
+            width: 180px;
+            height: 42px;
+            margin-bottom: 30px;
+            padding-left: 5px;
         }
 
         &:focus {

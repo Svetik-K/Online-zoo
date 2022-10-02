@@ -1,12 +1,27 @@
 .panda {
     width: 100%;
-    height: 390px;
+    height: 387px;
     background-image: url(../assets/images/panda_bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
 
     @media all and (max-width: 1000px) {
+        height: 390px;
         background-image: url(../assets/images/bg_donate_1000.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    @media all and (max-width: 760px) {
+        height: 336px;
+        background-image: url(../assets/images/bg_donate_640.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    @media all and (max-width: 320px) {
+        height: 187px;
+        background-image: url(../assets/images/bg_donate_320.jpg);
         background-repeat: no-repeat;
         background-position: center;
     }
