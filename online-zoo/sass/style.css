@@ -644,6 +644,12 @@ a {
   }
 }
 
+@media all and (max-width: 390px) {
+  .donation-info__wrapper {
+    padding: 30px 10px 21px;
+  }
+}
+
 .header {
   position: relative;
   width: 100%;
@@ -2451,7 +2457,7 @@ a {
   }
 }
 
-@media all and (max-width: 760px) {
+@media all and (max-width: 640px) {
   .panda {
     height: 336px;
     background-image: url(../assets/images/bg_donate_640.jpg);
@@ -2523,6 +2529,12 @@ a {
   }
 }
 
+@media all and (max-width: 390px) {
+  .donation-info__text {
+    margin-bottom: 31px;
+  }
+}
+
 .donation-info__subtitle {
   font-size: 36px;
   line-height: 47px;
@@ -2591,6 +2603,12 @@ a {
 @media all and (max-width: 560px) {
   .pick-friend {
     padding: 20px 0 31px;
+  }
+}
+
+@media all and (max-width: 390px) {
+  .pick-friend {
+    padding: 20px 0 20px;
   }
 }
 
@@ -2694,6 +2712,12 @@ a {
   }
 }
 
+@media all and (max-width: 390px) {
+  .pick-friend__amount {
+    padding-left: 0;
+  }
+}
+
 .pick-friend__scale {
   margin-bottom: 13px;
 }
@@ -2701,6 +2725,12 @@ a {
 @media all and (max-width: 1200px) {
   .pick-friend__scale {
     margin-bottom: 12px;
+  }
+}
+
+@media all and (max-width: 390px) {
+  .pick-friend__scale {
+    margin-bottom: 6px;
   }
 }
 
@@ -2742,6 +2772,12 @@ a {
     font-style: normal;
     font-family: "Roboto", sans-serif;
     margin-bottom: 25px;
+  }
+}
+
+@media all and (max-width: 390px) {
+  .pick-friend__prices {
+    padding: 0 12px 0 8px;
   }
 }
 
@@ -2830,6 +2866,12 @@ a {
   }
 }
 
+@media all and (max-width: 390px) {
+  .counter {
+    margin-bottom: 5px;
+  }
+}
+
 .counter__number {
   width: 159px;
   display: flex;
@@ -2842,6 +2884,13 @@ a {
 @media all and (max-width: 640px) {
   .counter__number {
     padding-top: 62px;
+  }
+}
+
+@media all and (max-width: 390px) {
+  .counter__number {
+    width: 90px;
+    padding-top: 48px;
   }
 }
 
@@ -2865,6 +2914,12 @@ a {
   }
 }
 
+@media all and (max-width: 390px) {
+  .counter__number span {
+    margin-bottom: 7px;
+  }
+}
+
 .counter__number p {
   font-size: 16px;
   line-height: 22.4px;
@@ -2881,6 +2936,12 @@ a {
     font-weight: 400;
     font-style: normal;
     font-family: "Roboto", sans-serif;
+  }
+}
+
+@media all and (max-width: 390px) {
+  .counter__number p {
+    text-align: center;
   }
 }
 
@@ -2903,6 +2964,12 @@ a {
 @media all and (max-width: 560px) {
   .counter__cross {
     padding: 73px 36px 0 11px;
+  }
+}
+
+@media all and (max-width: 390px) {
+  .counter__cross {
+    padding: 71px 36px 0 5px;
   }
 }
 
@@ -2957,6 +3024,13 @@ a {
   }
 }
 
+@media all and (max-width: 390px) {
+  .radios {
+    height: 13.5px;
+    padding: 4px 0 4.5px;
+  }
+}
+
 .radios::after {
   content: '';
   position: absolute;
@@ -2978,6 +3052,14 @@ a {
   .radios::after {
     width: calc(100% - 80px);
     left: 40px;
+  }
+}
+
+@media all and (max-width: 390px) {
+  .radios::after {
+    width: calc(100% - 40px);
+    left: 20px;
+    top: 6px;
   }
 }
 
@@ -3009,6 +3091,19 @@ a {
   }
   .radios__item:nth-child(6) {
     background: url(../assets/icons/yellow_dot.svg), url(../assets/icons/roller_icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media all and (max-width: 390px) {
+  .radios__item {
+    background-image: url(../assets/icons/dot_mini.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .radios__item:nth-child(6) {
+    background: url(../assets/icons/dot_mini.svg), url(../assets/icons/roller_icon_mini.svg);
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -3054,6 +3149,12 @@ a {
   }
 }
 
+@media all and (max-width: 390px) {
+  .another-amount__input {
+    margin-bottom: 25px;
+  }
+}
+
 .another-amount__input:focus {
   outline: none;
   border: 1px solid #4B9200;
@@ -3066,6 +3167,12 @@ a {
 .another-amount__periods {
   margin-bottom: 30px;
   display: flex;
+}
+
+@media all and (max-width: 390px) {
+  .another-amount__periods {
+    margin-bottom: 28px;
+  }
 }
 
 .another-amount__periods label {
@@ -3081,8 +3188,20 @@ a {
   margin-right: 45px;
 }
 
+@media all and (max-width: 390px) {
+  .another-amount__periods label[for="monthly"] {
+    margin-right: 45px;
+  }
+}
+
 .another-amount__periods label[for="once"] {
   margin-right: 20px;
+}
+
+@media all and (max-width: 390px) {
+  .another-amount__periods label[for="once"] {
+    margin-right: 30px;
+  }
 }
 
 .another-amount__periods input {
@@ -3109,5 +3228,16 @@ a {
   font-style: normal;
   font-family: "Roboto", sans-serif;
   color: #333B41;
+}
+
+@media all and (max-width: 390px) {
+  .another-amount__text {
+    font-size: 15.8px;
+    line-height: 22px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    text-align: left;
+  }
 }
 /*# sourceMappingURL=style.css.map */
