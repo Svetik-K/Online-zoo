@@ -11,13 +11,13 @@
     @media all and (max-width: 640px) {
         background-image: url(../assets/images/bg_main_640.jpg);
         background-repeat: no-repeat;
-        background-position: top -35px center;
+        background-position: top center;
     }
 
     @media all and (max-width: 320px) {
         background-image: url(../assets/images/bg_main_320.jpg);
         background-repeat: no-repeat;
-        background-position: top center;
+        background-position: top 34px center;
     }
 
     &__title {
@@ -45,7 +45,7 @@
 
         @media all and (max-width: 320px) {
             width: 128px;
-            @include font(27.2px, 20.9px, 700);
+            @include font(27.7px, 20.9px, 700);
         }
 
 

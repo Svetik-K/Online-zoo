@@ -8,6 +8,10 @@
     @media all and (max-width: 760px) {
         padding: 2.5px 0;
     }
+
+    @media all and (max-width: 640px) {
+        position: fixed;
+    }
 }
 
 #header-logo {

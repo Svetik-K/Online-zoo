@@ -13,16 +13,16 @@
     }
 
     @media all and (max-width: 640px) {
-        height: 336px;
+        height: 370px;
         background-image: url(../assets/images/bg_donate_640.jpg);
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: top 34px center;
     }
 
     @media all and (max-width: 320px) {
-        height: 187px;
+        height: 221px;
         background-image: url(../assets/images/bg_donate_320.jpg);
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: top 34px center;
     }
 }
