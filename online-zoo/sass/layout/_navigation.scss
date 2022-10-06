@@ -1,6 +1,10 @@
 .nav {
     display: flex;
 
+    @media all and (max-width: 760px) {
+        flex-direction: column;
+    }
+
     &__item {
         @include font(16px, 52px, 500);
         padding-right: 58px;
@@ -13,12 +17,22 @@
             padding-right: 25px;
         }
 
+        @media all and (max-width: 760px) {
+            @include font(16px, 22px, 400);
+            margin-bottom: 15px;
+        }
+
+
     }
 
     &__link {
         text-decoration: none;
         color: $color-white;
         transition: 0.5s;
+
+        @media all and (max-width: 760px) {
+            color: $color-black-blue;
+        }
 
         &.active {
             background: $color-orange-grad;
@@ -33,10 +47,73 @@
     }
 }
 
-.navigation {
+.burger-logo {
+    display: none;
+    width: 65.6px;
+    height: 41.6px;
+    @include font(15px, 18px, 400);
+    text-align: center;
+    background-image: url(../assets/icons/bamboo_orange.svg);
+    background-position: left 7px bottom 7px;
+    background-repeat: no-repeat;
+    border: 1px solid $color-border-link;
+    border-radius: 2px;
+    padding-top: 2.8px;
+    margin-bottom: 30px;
+
+    a {    
+        color: $color-border-link;
+        text-decoration: none;
+    }
 
     @media all and (max-width: 760px) {
-        display: none;
+        display: block;
     }
 }
 
+#burger-design {
+    display: none;
+    @include font(16px, 22px, 400);
+    text-decoration: none;
+    color: $color-black-blue;
+
+    &:hover {
+        color: $color-orange;
+    }
+
+    @media all and (max-width: 760px) {
+        display: block;
+    }
+}
+
+.navigation {
+
+    @media all and (max-width: 760px) {
+        display: block;
+        position: absolute;
+        top: -329px;
+        left: 0;
+        width: 100vw;
+        height: 329px;
+        background-color: $color-white;
+        padding: 13px 0 0 14px;
+        transition: 0.5s;
+        z-index: 20;
+    }
+}
+
+.open {
+    top: 0;
+}
+
+.overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 15;
+    transition: 0.5s;
+}

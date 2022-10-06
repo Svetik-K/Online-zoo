@@ -75,13 +75,12 @@ form {
     border-radius: 2px;
     box-sizing: border-box;
 
-    &:focus {
-        outline: none;
+    &:focus:valid {
         color: $color-placeholder;
         border: 1px solid $color-green;
     }
 
-    &:focus + .button_submit {
+    &:focus:valid + .button_submit {
         border: 1px solid $color-green;
         color: $color-green;
     }
@@ -89,6 +88,16 @@ form {
     &::placeholder {
         @include font(16px, 22px, 400);
         color: $color-placeholder;
+    }
+
+    &:focus:invalid {
+        color: $color-placeholder;
+        border: 1px solid $color-red;
+    }
+
+    &:focus:invalid + .button_submit {
+        border: 1px solid $color-red;
+        color: $color-red;
     }
 }
 
