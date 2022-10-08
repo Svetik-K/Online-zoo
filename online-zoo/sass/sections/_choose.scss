@@ -76,89 +76,89 @@
         height: 332px;
     }
 
-    &:nth-child(1),
-    &:nth-child(3),
-    &:nth-child(4) {
+    // &:nth-child(1),
+    // &:nth-child(3),
+    // &:nth-child(4) {
 
-        .animal-card__content {
-            background: url(../assets/icons/banana-bamboo_icon.svg), $color-white;
-            background-position: right 10px bottom 14px;
-            background-repeat: no-repeat;
+    //     .animal-card__content {
+    //         background: url(../assets/icons/banana-bamboo_icon.svg), $color-white;
+    //         background-position: right 10px bottom 14px;
+    //         background-repeat: no-repeat;
 
-            @media all and (max-width: 1000px) {
-                background: url(../assets/icons/banana-bamboo_icon.svg), $color-white;
-                background-position: right 14px bottom 14px;
-                background-repeat: no-repeat;
-            }
+    //         @media all and (max-width: 1000px) {
+    //             background: url(../assets/icons/banana-bamboo_icon.svg), $color-white;
+    //             background-position: right 14px bottom 14px;
+    //             background-repeat: no-repeat;
+    //         }
 
-            @media all and (max-width: 760px) {
-                background: url(../assets/icons/banana-bamboo_mini.svg), $color-white;
-                background-position: right 9px bottom 8px;
-                background-repeat: no-repeat;
-            }
-        }
-    }
+    //         @media all and (max-width: 760px) {
+    //             background: url(../assets/icons/banana-bamboo_mini.svg), $color-white;
+    //             background-position: right 9px bottom 8px;
+    //             background-repeat: no-repeat;
+    //         }
+    //     }
+    // }
 
-    &:nth-child(2),
-    &:nth-child(5),
-    &:nth-child(6),
-    &:nth-child(7) {
+    // &:nth-child(2),
+    // &:nth-child(5),
+    // &:nth-child(6),
+    // &:nth-child(7) {
 
-        .animal-card__content {
-            background: url(../assets/icons/meet-fish_icon.svg), $color-white;
-            background-position: right 5px bottom 14px;
-            background-repeat: no-repeat;
+    //     .animal-card__content {
+    //         background: url(../assets/icons/meet-fish_icon.svg), $color-white;
+    //         background-position: right 5px bottom 14px;
+    //         background-repeat: no-repeat;
 
-            @media all and (max-width: 1000px) {
-                background: url(../assets/icons/meet-fish_icon.svg), $color-white;
-                background-position: right 8px bottom 14px;
-                background-repeat: no-repeat;
-            }
+    //         @media all and (max-width: 1000px) {
+    //             background: url(../assets/icons/meet-fish_icon.svg), $color-white;
+    //             background-position: right 8px bottom 14px;
+    //             background-repeat: no-repeat;
+    //         }
 
-            @media all and (max-width: 760px) {
-                background: url(../assets/icons/meet-fish_mini.svg), $color-white;
-                background-position: right 5px bottom 8px;
-                background-repeat: no-repeat;
-            }
-        }
-    }
+    //         @media all and (max-width: 760px) {
+    //             background: url(../assets/icons/meet-fish_mini.svg), $color-white;
+    //             background-position: right 5px bottom 8px;
+    //             background-repeat: no-repeat;
+    //         }
+    //     }
+    // }
 
-    &:nth-child(7) {
-        display: none;
-    }
+    // &:nth-child(7) {
+    //     display: none;
+    // }
 
-    @media all and (max-width: 1000px) {
-        &:nth-child(1) {
-            order: 1;
-        }
-        &:nth-child(2) {
-            order: 2;
-        }
-        &:nth-child(3) {
-            order: 4;
-        }
-        &:nth-child(4) {
-            display: none;
-            order: 7;
-        }
-        &:nth-child(5) {
-            order: 3;
-        }
-        &:nth-child(6) {
-            order: 6;
-        }
-        &:nth-child(7) {
-            display: flex;
-            order: 5;
-        }
-    }
+    // @media all and (max-width: 1000px) {
+    //     &:nth-child(1) {
+    //         order: 1;
+    //     }
+    //     &:nth-child(2) {
+    //         order: 2;
+    //     }
+    //     &:nth-child(3) {
+    //         order: 4;
+    //     }
+    //     &:nth-child(4) {
+    //         display: none;
+    //         order: 7;
+    //     }
+    //     &:nth-child(5) {
+    //         order: 3;
+    //     }
+    //     &:nth-child(6) {
+    //         order: 6;
+    //     }
+    //     &:nth-child(7) {
+    //         display: flex;
+    //         order: 5;
+    //     }
+    // }
 
-    @media all and (max-width: 980px) {
-        &:nth-child(5),
-        &:nth-child(6) {
-            display: none;
-        }
-    }
+    // @media all and (max-width: 980px) {
+    //     &:nth-child(5),
+    //     &:nth-child(6) {
+    //         display: none;
+    //     }
+    // }
 
 
     &__content {

@@ -1749,86 +1749,6 @@ a {
   }
 }
 
-.animal-card:nth-child(1) .animal-card__content, .animal-card:nth-child(3) .animal-card__content, .animal-card:nth-child(4) .animal-card__content {
-  background: url(../assets/icons/banana-bamboo_icon.svg), #FFFFFF;
-  background-position: right 10px bottom 14px;
-  background-repeat: no-repeat;
-}
-
-@media all and (max-width: 1000px) {
-  .animal-card:nth-child(1) .animal-card__content, .animal-card:nth-child(3) .animal-card__content, .animal-card:nth-child(4) .animal-card__content {
-    background: url(../assets/icons/banana-bamboo_icon.svg), #FFFFFF;
-    background-position: right 14px bottom 14px;
-    background-repeat: no-repeat;
-  }
-}
-
-@media all and (max-width: 760px) {
-  .animal-card:nth-child(1) .animal-card__content, .animal-card:nth-child(3) .animal-card__content, .animal-card:nth-child(4) .animal-card__content {
-    background: url(../assets/icons/banana-bamboo_mini.svg), #FFFFFF;
-    background-position: right 9px bottom 8px;
-    background-repeat: no-repeat;
-  }
-}
-
-.animal-card:nth-child(2) .animal-card__content, .animal-card:nth-child(5) .animal-card__content, .animal-card:nth-child(6) .animal-card__content, .animal-card:nth-child(7) .animal-card__content {
-  background: url(../assets/icons/meet-fish_icon.svg), #FFFFFF;
-  background-position: right 5px bottom 14px;
-  background-repeat: no-repeat;
-}
-
-@media all and (max-width: 1000px) {
-  .animal-card:nth-child(2) .animal-card__content, .animal-card:nth-child(5) .animal-card__content, .animal-card:nth-child(6) .animal-card__content, .animal-card:nth-child(7) .animal-card__content {
-    background: url(../assets/icons/meet-fish_icon.svg), #FFFFFF;
-    background-position: right 8px bottom 14px;
-    background-repeat: no-repeat;
-  }
-}
-
-@media all and (max-width: 760px) {
-  .animal-card:nth-child(2) .animal-card__content, .animal-card:nth-child(5) .animal-card__content, .animal-card:nth-child(6) .animal-card__content, .animal-card:nth-child(7) .animal-card__content {
-    background: url(../assets/icons/meet-fish_mini.svg), #FFFFFF;
-    background-position: right 5px bottom 8px;
-    background-repeat: no-repeat;
-  }
-}
-
-.animal-card:nth-child(7) {
-  display: none;
-}
-
-@media all and (max-width: 1000px) {
-  .animal-card:nth-child(1) {
-    order: 1;
-  }
-  .animal-card:nth-child(2) {
-    order: 2;
-  }
-  .animal-card:nth-child(3) {
-    order: 4;
-  }
-  .animal-card:nth-child(4) {
-    display: none;
-    order: 7;
-  }
-  .animal-card:nth-child(5) {
-    order: 3;
-  }
-  .animal-card:nth-child(6) {
-    order: 6;
-  }
-  .animal-card:nth-child(7) {
-    display: flex;
-    order: 5;
-  }
-}
-
-@media all and (max-width: 980px) {
-  .animal-card:nth-child(5), .animal-card:nth-child(6) {
-    display: none;
-  }
-}
-
 .animal-card__content {
   width: calc(100% - 2px);
   height: calc(100% - 2px);
@@ -2477,7 +2397,7 @@ a {
   appearance: none;
   background-color: #FE9013;
   height: 6px;
-  width: 19%;
+  width: 12.5%;
   border-radius: 5px;
 }
 
@@ -3088,12 +3008,6 @@ a {
   }
 }
 
-@media all and (max-width: 999px) {
-  .pick-friend__prices span:nth-child(6) {
-    color: #FE9013;
-  }
-}
-
 .text-orange {
   color: #FE9013;
 }
@@ -3341,12 +3255,6 @@ a {
   cursor: pointer;
 }
 
-.radios__item:nth-child(3) {
-  background: url(../assets/icons/yellow_dot.svg), url(../assets/icons/roller_icon.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 @media all and (max-width: 1000px) {
   .radios__item:first-child {
     display: none;
@@ -3357,20 +3265,16 @@ a {
   .radios__item:nth-child(2), .radios__item:nth-child(3) {
     display: none;
   }
-  .radios__item:nth-child(6) {
-    background: url(../assets/icons/yellow_dot.svg), url(../assets/icons/roller_icon.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+}
+
+.active-dot {
+  background: url(../assets/icons/yellow_dot.svg), url(../assets/icons/roller_icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 @media all and (max-width: 390px) {
-  .radios__item {
-    background-image: url(../assets/icons/dot_mini.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .radios__item:nth-child(6) {
+  .active-dot {
     background: url(../assets/icons/dot_mini.svg), url(../assets/icons/roller_icon_mini.svg);
     background-position: center;
     background-repeat: no-repeat;

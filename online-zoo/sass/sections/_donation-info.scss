@@ -232,12 +232,6 @@
                     display: none;
                 }
             }    
-            
-            @media all and (max-width: 999px) {
-                &:nth-child(6) {
-                    color: $color-border-link;
-                }
-            }
         }
     }
 }
@@ -354,7 +348,6 @@
             height: 100%;
         }
     }
-
 }
 
 .radios {
@@ -424,12 +417,6 @@
         background-repeat: no-repeat;
         cursor: pointer;
 
-        &:nth-child(3) {
-            background: url(../assets/icons/yellow_dot.svg), url(../assets/icons/roller_icon.svg);
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-
         @media all and (max-width: 1000px) {
             &:first-child {
                 display: none;
@@ -441,26 +428,20 @@
             &:nth-child(3) {
                 display: none;
             }
-
-            &:nth-child(6) {
-                background: url(../assets/icons/yellow_dot.svg), url(../assets/icons/roller_icon.svg);
-                background-position: center;
-                background-repeat: no-repeat;
-            }
-        }
-
-        @media all and (max-width: 390px) {
-            background-image: url(../assets/icons/dot_mini.svg);
-            background-position: center;
-            background-repeat: no-repeat;
-
-            &:nth-child(6) {
-                background: url(../assets/icons/dot_mini.svg), url(../assets/icons/roller_icon_mini.svg);
-                background-position: center;
-                background-repeat: no-repeat;
-            }
         }
     }   
+}
+
+.active-dot {
+    background: url(../assets/icons/yellow_dot.svg), url(../assets/icons/roller_icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media all and (max-width: 390px) {
+        background: url(../assets/icons/dot_mini.svg), url(../assets/icons/roller_icon_mini.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 }
 
 .another-amount {
