@@ -40,7 +40,7 @@
             </div>
         </div>
     </header>
-    <div class="overlay"></div>
+    <div class="burger-overlay"></div>
     <main class="main">
         <section class="watch">
             <div class="wrapper watch__wrapper">
@@ -206,19 +206,20 @@
                 <button class="button button_feed">Feed a friend now</button>
             </div>
         </section>
+        <div class="modal-overlay"></div>
         <section class="testimonials">
             <div class="wrapper testimonials__wrapper">
                 <h3 class="testimonials__title">Testimonials</h3>
                 <div class="testimonials__reviews">
-                    <div class="review">
+                    <div class="review" id="1">
                         <div class="review__content">
                             <div class="review__user-info">
                                 <div class="user-info__ava">
-                                    <img src="../../assets/icons/anonym.svg">
+                                    <img src="../../assets/images/Michael.png">
                                 </div>
                                 <div class="review__user-text">
                                     <h5 class="user-text__name">Michael John</h5>
-                                    <p class="user-text__location">Local Austria &nbsp;&bull;<span>&nbsp;&nbsp;Today</span></p>    
+                                    <p class="user-text__location">Local Austria &nbsp;&bull;<span class="user-text__time">&nbsp;&nbsp;Today</span></p>    
                                 </div>  
                             </div>
                             <p class="review__text">The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.<br>
@@ -226,7 +227,7 @@
                             </p>
                         </div>   
                     </div>
-                    <div class="review">
+                    <div class="review" id="2">
                         <div class="review__content">
                             <div class="review__user-info">
                                 <div class="user-info__ava">
@@ -243,7 +244,7 @@
                             </p>
                         </div>   
                     </div>
-                    <div class="review">
+                    <div class="review" id="3">
                         <div class="review__content">
                             <div class="review__user-info">
                                 <div class="user-info__ava">
@@ -251,7 +252,7 @@
                                 </div>
                                 <div class="review__user-text">
                                     <h5 class="user-text__name">Fredericka Michelin</h5>
-                                    <p class="user-text__location">Local Austria &nbsp;&bull;<span>&nbsp;&nbsp;Yesterday</span></p>    
+                                    <p class="user-text__location">Local Austria &nbsp;&bull;<span class="user-text__time">&nbsp;&nbsp;Yesterday</span></p>    
                                 </div>  
                             </div>
                             <p class="review__text">The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.<br>
@@ -260,7 +261,7 @@
                             </p>
                         </div>   
                     </div>
-                    <div class="review">
+                    <div class="review" id="4">
                         <div class="review__content">
                             <div class="review__user-info">
                                 <div class="user-info__ava">
@@ -268,7 +269,73 @@
                                 </div>
                                 <div class="review__user-text">
                                     <h5 class="user-text__name">Mila Riksha</h5>
+                                    <p class="user-text__location">Local Austria &nbsp;&bull;<span class="user-text__time">&nbsp;&nbsp;Yesterday</span></p>   
+                                </div>
+                            </div>
+                            <p class="review__text">My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas.<br>
+                                The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.                                
+                            </p>
+                        </div>   
+                    </div>
+                    <div class="review" id="5">
+                        <div class="review__content">
+                            <div class="review__user-info">
+                                <div class="user-info__ava">
+                                    <img src="../../assets/images/Michael.png">
+                                </div>
+                                <div class="review__user-text">
+                                    <h5 class="user-text__name">Michael John</h5>
+                                    <p class="user-text__location">Local Austria &nbsp;&bull;<span class="user-text__time">&nbsp;&nbsp;Today</span></p>    
+                                </div>  
+                            </div>
+                            <p class="review__text">The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.<br>
+                                The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.                                
+                            </p>
+                        </div>   
+                    </div>
+                    <div class="review" id="6">
+                        <div class="review__content">
+                            <div class="review__user-info">
+                                <div class="user-info__ava">
+                                    <img src="../../assets/images/Oskar.png">
+                                </div>
+                                <div class="review__user-text">
+                                    <h5 class="user-text__name">Oskar Samborsky</h5>
                                     <p class="user-text__location">Local Austria &nbsp;&bull;<span>&nbsp;&nbsp;Yesterday</span></p>   
+                                </div>  
+                            </div>
+                            <p class="review__text">Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas.<br> 
+                                The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+                                The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+                            </p>
+                        </div>   
+                    </div>
+                    <div class="review" id="7">
+                        <div class="review__content">
+                            <div class="review__user-info">
+                                <div class="user-info__ava">
+                                    <img src="../../assets/images/Frederika.png">
+                                </div>
+                                <div class="review__user-text">
+                                    <h5 class="user-text__name">Fredericka Michelin</h5>
+                                    <p class="user-text__location">Local Austria &nbsp;&bull;<span class="user-text__time">&nbsp;&nbsp;Yesterday</span></p>    
+                                </div>  
+                            </div>
+                            <p class="review__text">The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.<br>
+                                The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met.<br>
+                                The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.                                 
+                            </p>
+                        </div>   
+                    </div>
+                    <div class="review" id="8">
+                        <div class="review__content">
+                            <div class="review__user-info">
+                                <div class="user-info__ava">
+                                    <img src="../../assets/images/Mila.png">
+                                </div>
+                                <div class="review__user-text">
+                                    <h5 class="user-text__name">Mila Riksha</h5>
+                                    <p class="user-text__location">Local Austria &nbsp;&bull;<span class="user-text__time">&nbsp;&nbsp;Yesterday</span></p>   
                                 </div>
                             </div>
                             <p class="review__text">My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas.<br>
@@ -278,9 +345,10 @@
                     </div>
                 </div>
                 <div class="testimonials__progress">
-                    <div class="progress__content">
+                    <!-- <div class="progress__content">
                         <div class="progress__bar"></div>
-                    </div>     
+                    </div>      -->
+                    <input type="range" class="progress-bar" min="0" max="8">
                 </div>
                 <button class="button button_feedback">leave feedback</button>
             </div>
@@ -341,6 +409,6 @@
             </div>
         </div>
     </footer>
-    <script src="./script.js"></script>
+    <script src="./script.js" type="module"></script>
 </body>
 </html>

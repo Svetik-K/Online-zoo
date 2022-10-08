@@ -59,18 +59,24 @@
         width: 100%;
         height: 391px;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         margin-bottom: 21px;
+        gap: 29px;
+        overflow: hidden;
+
 
         @media all and (max-width: 1200px) {
-            justify-content: center;
-            column-gap: 30px;
+            width: 940px;
+            margin: 0 auto 21px;
         }
         
-        @media all and (max-width: 960px) {
+        @media all and (max-width: 999px) {
+            width: 100%;
+            height: 357px;
             flex-direction: column;
             row-gap: 15px;
-            margin-bottom: 25px;
+            margin-bottom: 40px;
+            overflow: scroll;
         }
 
         @media all and (max-width: 760px) {
@@ -98,49 +104,83 @@
             margin-bottom: 50px;
         }
 
-        @media all and (max-width: 960px) {
+        @media all and (max-width: 999px) {
             display: none;
         }
     }
 }
 
+.progress-bar {
+    appearance: none;
+    width: calc(100% - 3px); 
+    height: 5px;
+    background: #F5F7F6;
+    cursor: pointer;
 
-.progress {
-
-    &__content {
-        width: calc(100% - 3px);
-        height: 5px;
-        background-color: #F5F7F6;
+    &::-moz-range-track,
+    &::-webkit-slider-runnable-track {
+        background-color: $color-border-link;
+        height: 6px;
         border-radius: 5px;
-        cursor: pointer;
     }
 
-    &__bar {
+    &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
         background-color: $color-border-link;
-        border-radius: 5px;
-        height: 100%;
+        height: 6px;
         width: 19%;
-        transition: width 0.1s linear;
+        border-radius: 5px;
+    }
+    
+    &::-moz-range-thumb {
+        border: none;
+        appearance: none;
+        background-color: $color-border-link;
+        height: 6px;
+        width: 19%;
+        border-radius: 5px;
     }
 }
 
+
+// .progress {
+
+//     &__content {
+//         width: calc(100% - 3px);
+//         height: 5px;
+//         background-color: #F5F7F6;
+//         border-radius: 5px;
+//         cursor: pointer;
+//     }
+
+//     &__bar {
+//         background-color: $color-border-link;
+//         border-radius: 5px;
+//         height: 100%;
+//         width: 19%;
+//         transition: width 0.1s linear;
+//     }
+// }
+
 .review {
-    width: 268px;
+    min-width: 268px;
     height: 391px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
     background: $color-pink-grad;
+    cursor: pointer;
 
     @media all and (max-width: 1200px) {
-        width: 293px;
+        min-width: 293px;
         height: 391px;
     }
 
-    @media all and (max-width: 960px) {
+    @media all and (max-width: 999px) {
         width: 100%;
-        height: 109px;
+        min-height: 109px;
     }
 
     &__content {
@@ -197,7 +237,7 @@
             max-height: 291px;
         }
 
-        @media all and (max-width: 960px) {
+        @media all and (max-width: 999px) {
             max-height: 36px;
             padding-left: 5px;
         }
@@ -222,4 +262,87 @@
         @include font(15px, 18px, 300);
         color: #BDBDBD;
     }
+}
+
+// Modal
+.modal-overlay {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 45;
+
+}
+
+.modal-shown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    position: relative;
+    width: 268px;
+    height: 391px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: $color-pink-grad;
+    z-index: 50;
+    animation: fadein .3s;
+
+    &__content {
+        width: calc(100% - 3px);
+        height: calc(100% - 3px);
+        background: $color-light-grey;
+        border-radius: 20px;
+        padding: 13.5px 13px 18px 15.5px;
+        box-sizing: border-box;
+    }
+
+    &__user-info {
+        display: flex;
+        margin-bottom: 7.5px;
+    }
+
+    &__ava {
+        width: 37px;
+        height: 37px;
+        margin-right: 11px;
+    }
+
+    &__text {
+        @include font(15px, 18px, 300);
+        color: $color-grey;  
+        max-height: 309px;
+        overflow: scroll;
+    }
+
+    &__button {
+        position: absolute;
+        top: -14px;
+        right: -14px;
+        width: 14px;
+        height: 14px;
+        background-color: transparent;
+        background: url(../assets/icons/x_icon.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        outline: none;
+        border: none;
+    }
+}
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
