@@ -9,7 +9,7 @@ const buttonRight = document.querySelector('.button_right');
 let cardsOnPage = 6;
 
 let slidesArray = [];
-for(let i = 0; i < 5; i++) {
+for(let i = 0; i < 3; i++) {
     let cardArray = createCards(cardsOnPage);
     slidesArray.push(cardArray);
 }
@@ -54,7 +54,7 @@ function moveCardsLeft() {
         elToRemove.parentElement.removeChild(elToRemove);
         const newCards = createCards(6);
         const newSlide = createSlide(newCards);
-        newSlide.style.right = `0`;
+        newSlide.style.left = `${slideWidth}px`;
         animalCards.appendChild(newSlide);
         buttonRight.addEventListener('click', moveCardsLeft);
     }, 1000);   
@@ -99,14 +99,13 @@ function createCards(numberOfcards) {
 const reviewsContainer = document.querySelector('.testimonials__reviews');
 const input = document.querySelector('.progress-bar');
 
+initReviews();
 
 input.addEventListener('input', () => {
     let interval = parseInt(input.value);
     const cardWidth = document.querySelectorAll('.review')[0].offsetWidth;
     reviewsContainer.style.left = `-${(interval * cardWidth) + (29 * interval)}px`;
 })
-
-initReviews();
 
 function initReviews() {
     const randomNums = [];

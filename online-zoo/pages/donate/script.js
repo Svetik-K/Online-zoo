@@ -26,6 +26,7 @@ let input = document.querySelector('.another-amount__input');
 
 radioButtons[5].classList.add('active-dot');
 prices[5].classList.add('text-orange');
+input.value = 100;
 
 radioButtons.forEach((button, index) => button.addEventListener('click', (e) => {
     if(e.target.classList.contains('active-dot')) {
@@ -46,4 +47,6 @@ radioButtons.forEach((button, index) => button.addEventListener('click', (e) => 
         input.value = +prices[index].innerHTML.slice(1);
     }
 }))
+
+
 
