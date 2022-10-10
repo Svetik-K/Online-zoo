@@ -56,13 +56,13 @@
     }
 
     &__reviews {
-        width: 100%;
+        position: relative;
+        width: 300%;
         height: 391px;
         display: flex;
         justify-content: flex-start;
         margin-bottom: 21px;
         gap: 29px;
-        overflow: hidden;
 
 
         @media all and (max-width: 1200px) {
@@ -108,6 +108,12 @@
             display: none;
         }
     }
+}
+
+.reviews-wrapper {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
 }
 
 .progress-bar {
@@ -164,7 +170,7 @@
 // }
 
 .review {
-    min-width: 268px;
+    width: 268px;
     height: 391px;
     display: flex;
     justify-content: center;
@@ -230,7 +236,7 @@
     &__text {
         @include font(15px, 18px, 300);
         color: $color-grey;  
-        max-height: 309px;
+        max-height: 305px;
         overflow: hidden;
 
         @media all and (max-width: 1200px) {

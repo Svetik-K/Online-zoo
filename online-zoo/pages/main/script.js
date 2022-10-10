@@ -1,4 +1,5 @@
 import {reviews} from './reviews.js';
+import {animals} from './animals.js';
 
 // Burger menu
 const burgerButton = document.querySelector('.burger');
@@ -100,3 +101,5 @@ function closeModal() {
     modalOverlay.innerHTML = '';
     modalOverlay.classList.remove('modal-shown');
 }
+
+

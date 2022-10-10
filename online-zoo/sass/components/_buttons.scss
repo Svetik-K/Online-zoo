@@ -150,6 +150,7 @@
     border: none;
     cursor: pointer;
     transition: 0.5s;
+    z-index: 30;
 
     &:hover {
         background: url(../assets/icons/arr_left.svg), $color-button-hover;
@@ -201,6 +202,7 @@
     border: none;
     cursor: pointer;
     transition: 0.5s;
+    z-index: 30;
 
     &:hover {
         background: url(../assets/icons/arr_right.svg), $color-button-hover;
