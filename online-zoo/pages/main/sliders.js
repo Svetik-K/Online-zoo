@@ -57,7 +57,7 @@ function moveCardsLeft() {
         newSlide.style.right = `0`;
         animalCards.appendChild(newSlide);
         buttonRight.addEventListener('click', moveCardsLeft);
-    }, 500);   
+    }, 1000);   
 }
 
 function moveCardsRight() {
@@ -77,7 +77,7 @@ function moveCardsRight() {
         newSlide.style.left = `-${slideWidth}px`;
         animalCards.prepend(newSlide);
         buttonLeft.addEventListener('click', moveCardsRight);
-    }, 500);   
+    }, 1000);   
 }
 
 
@@ -208,48 +208,3 @@ function createReview(review) {
 
     return reviewCard;
 }
-
-
-// let slideIndex = 0;
-// let slideWidth = animalCards.offsetWidth;
-// let offset = 0;
-
-// function createSlide() {
-//     let newSlide = document.createElement('div');
-//     newSlide.classList.add('animal-cards__slide');
-
-//     for(let card of slidesArray[slideIndex]) {
-//         newSlide.append(card);
-//     }
-
-//     newSlide.style.left = offset * slideWidth + 'px';
-//     animalCards.appendChild(newSlide);
-
-//     if(slideIndex + 1 == slidesArray.length) {
-//         slideIndex = 0;
-//     } else {
-//         slideIndex++;
-//     }
-//     offset = 1;
-// }
-
-// createSlide();
-// createSlide();
-
-// buttonRight.addEventListener('click', moveCardsLeft);
-
-
-// function moveCardsLeft() {
-//     buttonRight.removeEventListener('click', moveCardsLeft);
-//     let currentSlides = document.querySelectorAll('.animal-cards__slide');
-//     let curOffset = 0;
-//     for(let i = 0; i < currentSlides.length; i++) {
-//         currentSlides[i].style.left = (curOffset * slideWidth) - slideWidth + 'px';
-//         curOffset++;
-//     } 
-//     setTimeout(() => {
-//         currentSlides[0].outerHTML = '';
-//         createSlide();
-//         buttonRight.addEventListener('click', moveCardsLeft);
-//     }, 500);
-// }
