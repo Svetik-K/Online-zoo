@@ -1719,7 +1719,7 @@ a {
   position: relative;
   top: 0;
   left: -100%px;
-  width: 500%;
+  width: 300%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -2367,7 +2367,6 @@ a {
 
 @media all and (max-width: 1200px) {
   .testimonials__reviews {
-    width: 940px;
     margin: 0 auto 21px;
   }
 }
@@ -3392,9 +3391,16 @@ a {
   }
 }
 
-.another-amount__input:focus {
-  outline: none;
+.another-amount__input:valid {
   border: 1px solid #4B9200;
+}
+
+.another-amount__input:focus:valid {
+  border: 1px solid #4B9200;
+}
+
+.another-amount__input:focus:invalid {
+  border: 1px solid #D31414;
 }
 
 .another-amount__input:focus::placeholder {

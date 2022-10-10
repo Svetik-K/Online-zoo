@@ -48,5 +48,17 @@ radioButtons.forEach((button, index) => button.addEventListener('click', (e) => 
     }
 }))
 
+input.addEventListener('input', function(){
+    console.log(this.value)
+    if(this.value.length > 4){
+      this.value = this.value.slice(0, 4);
+    }
+    // for(let i = 0; i < prices.length; i++) {
+    //     if(+prices[i].innerHTML.slice(1) == this.value) {
+    //         prices[i].classList.add('text-orange');
+    //         radioButtons[i].classList.add('active-dot');
+    //     }
+    // }
+});
 
 

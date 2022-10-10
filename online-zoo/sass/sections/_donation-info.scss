@@ -488,9 +488,14 @@
             margin-bottom: 25px;
         }
 
-        &:focus {
-            outline: none;
+        &:valid {
             border: 1px solid $color-green;
+        }
+        &:focus:valid{
+            border: 1px solid $color-green;
+        }
+        &:focus:invalid {
+            border: 1px solid $color-red;
         }
 
         &:focus::placeholder {
