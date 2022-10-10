@@ -97,6 +97,14 @@ function createCards(numberOfcards) {
 
 // Reviews
 const reviewsContainer = document.querySelector('.testimonials__reviews');
+const input = document.querySelector('.progress-bar');
+
+
+input.addEventListener('input', () => {
+    let interval = parseInt(input.value);
+    const cardWidth = document.querySelectorAll('.review')[0].offsetWidth;
+    reviewsContainer.style.left = `-${(interval * cardWidth) + (29 * interval)}px`;
+})
 
 initReviews();
 

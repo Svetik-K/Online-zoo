@@ -2355,12 +2355,14 @@ a {
 
 .testimonials__reviews {
   position: relative;
+  left: 0;
   width: 300%;
   height: 391px;
   display: flex;
   justify-content: flex-start;
   margin-bottom: 21px;
   gap: 29px;
+  transition: all ease 1s;
 }
 
 @media all and (max-width: 1200px) {
@@ -2419,9 +2421,21 @@ a {
 }
 
 .reviews-wrapper {
-  width: 100%;
+  max-width: 1160px;
   overflow: hidden;
   margin: 0 auto;
+}
+
+@media all and (max-width: 1200px) {
+  .reviews-wrapper {
+    width: 940px;
+  }
+}
+
+@media all and (max-width: 999px) {
+  .reviews-wrapper {
+    width: 100%;
+  }
 }
 
 .progress-bar {
@@ -2555,12 +2569,6 @@ a {
   .review__text {
     max-height: 36px;
     padding-left: 5px;
-  }
-}
-
-@media all and (max-width: 1200px) {
-  .review:nth-child(4) {
-    display: none;
   }
 }
 
