@@ -229,7 +229,7 @@
         overflow: hidden;
 
         @media all and (max-width: 1200px) {
-            max-height: 291px;
+            max-height: 290px;
         }
 
         @media all and (max-width: 999px) {
@@ -238,12 +238,6 @@
         }
     }
 }
-
-// @media all and (max-width: 1200px) {
-//     .review:nth-child(4) {
-//         display: none;
-//     }
-// }
 
 .user-text {
 
