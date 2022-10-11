@@ -109,7 +109,7 @@ input.addEventListener('input', () => {
 
 function initReviews() {
     const randomNums = [];
-    for(let i = 0; i < 11; i++) {
+    for(let i = 0; i < 12; i++) {
         randomNums.push(Math.floor(Math.random() * 10));
     }
     randomNums.forEach(num => {
