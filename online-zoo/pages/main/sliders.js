@@ -42,6 +42,7 @@ buttonLeft.addEventListener('click', moveCardsRight);
 
 function moveCardsLeft() {
     buttonRight.removeEventListener('click', moveCardsLeft);
+    buttonLeft.removeEventListener('click', moveCardsRight);
     let slides = document.querySelectorAll('.animal-cards__slide');
     let curOffset = -1;
     for(let i = 0; i < slides.length; i++) {
@@ -57,11 +58,13 @@ function moveCardsLeft() {
         newSlide.style.left = `${slideWidth}px`;
         animalCards.appendChild(newSlide);
         buttonRight.addEventListener('click', moveCardsLeft);
+        buttonLeft.addEventListener('click', moveCardsRight);
     }, 1000);   
 }
 
 function moveCardsRight() {
     buttonLeft.removeEventListener('click', moveCardsRight);
+    buttonRight.removeEventListener('click', moveCardsLeft);
     let slides = document.querySelectorAll('.animal-cards__slide');
     let curOffset = 0;
     for(let i = 0; i < slides.length; i++) {
@@ -77,6 +80,7 @@ function moveCardsRight() {
         newSlide.style.left = `-${slideWidth}px`;
         animalCards.prepend(newSlide);
         buttonLeft.addEventListener('click', moveCardsRight);
+        buttonRight.addEventListener('click', moveCardsLeft);
     }, 1000);   
 }
 
