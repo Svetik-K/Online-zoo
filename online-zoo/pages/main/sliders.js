@@ -51,7 +51,7 @@ function moveCardsLeft() {
     }
 
     setTimeout(() => {
-        let elToRemove = document.querySelector('.animal-cards__slide:first-child')
+        let elToRemove = document.querySelector('.animal-cards__slide:first-child');
         elToRemove.parentElement.removeChild(elToRemove);
         const newCards = createCards(6);
         const newSlide = createSlide(newCards);
@@ -73,7 +73,7 @@ function moveCardsRight() {
     }
 
     setTimeout(() => {
-        let elToRemove = document.querySelector('.animal-cards__slide:last-child')
+        let elToRemove = document.querySelector('.animal-cards__slide:last-child');
         elToRemove.parentElement.removeChild(elToRemove);
         const newCards = createCards(6);
         const newSlide = createSlide(newCards);
