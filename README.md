@@ -1,2 +1,2 @@
-# svetik-k-JSFE2022Q3
-Private repository for @svetik-k
+# Online-zoo
+https://svetik-k.github.io/Online-zoo/online-zoo/pages/main/
